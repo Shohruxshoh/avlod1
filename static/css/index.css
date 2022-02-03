@@ -3,7 +3,7 @@ body{
     padding: 0px;
 }
 .navbar{
-    background-color: #0C111F !important;
+    background: #0C111F !important;
     transition: 0.3s linear;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
@@ -13,19 +13,22 @@ body{
     font-family: sans-serif, Montserrat;
     font-weight: 800;
     font-size: 24px;
+    margin-left: 40px;
+    margin-right: 5rem;
 }
-#nav.fixed{
-    background-color: transparent !important;
+#nav .fixed{
+    background-color: #0C111F !important;
     padding: 0;
 }
 .navbar .container-fluid .nav-link{
     font-family: sans-serif, Inter;
     font-weight: 500;
     font-size: 18px;
+    margin-left: 30px;
 }
 .home{
     background: #0C111F;
-    width: 1348px;
+    width: 1349px;
     height: 960px;
     left: 0px;
     top: 0px;
@@ -39,7 +42,7 @@ body{
 }
 .hankor{
     background: #F7F7F7;
-    width: 1440px;
+    width: 1349px;
 height: 180px;
 left: 0px;
 top: 1679px;
@@ -50,3 +53,159 @@ top: 1679px;
     width: 1179.21px;
     height: 103.95px;
 }
+.card1{
+    border:none;
+}
+.card1 img{
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1)
+}
+
+.salom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    right: 20px;
+    top: 20.34px;
+    
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 100px;    
+}
+.card1 .salom .p1{
+    position: static;
+    width: 79px;
+    left: 2rem;
+    padding-left: 9px;
+    top: 6px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    /* or 32px */
+    
+    letter-spacing: 0.02em;
+    
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.card-body{
+width: 400px;
+height: 144px;
+left: 0px;
+top: 284.8px;
+border-radius: 0px 0px 20px 20px;
+
+background: #FFFFFF;
+}
+
+.btn1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 9px 20px;
+    width: 108px;
+    height: 43px;
+    right: 20px;
+    top: 449.8px;
+    margin-left: 30px;
+
+    /* Ungu */
+
+    background: linear-gradient(135deg, #8482FF 0%, #7723FE 100%);
+    border-radius: 45px;
+}
+.narx .col-6 p{
+    padding: 0px;
+    margin: 0px;
+}
+.card2{
+    border:none;
+    border-radius: 20px 20px 20px 20px;
+}
+.card2 img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.salom1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    right: 20px;
+    top: 20.34px;
+    
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 100px;    
+}
+.card2 .salom1 .p2{
+    position: static;
+    width: 79px;
+    left: 2rem;
+    padding-left: 9px;
+    top: 6px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    /* or 32px */
+    
+    letter-spacing: 0.02em;
+    
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.rasm1{
+width: 518px;
+height: 301px;
+left: 80px;
+top: 3773px;
+border-radius: 30px;
+}
+.rasm2{
+width: 660px;
+height: 463px;
+left: 80px;
+top: 4287px;
+
+border-radius: 30px;
+}
+/* .rasm3{
+    width: 522px;
+height: 229px;
+left: 838px;
+top: 4287px;
+border-radius: 30px;
+}
+.rasm4{
+    width: 251px;
+height: 214px;
+left: 838px;
+top: 4536px;
+border-radius: 30px;
+} */
