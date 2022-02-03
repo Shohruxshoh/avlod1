@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: #0C111F !important;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+.navbar .container-fluid .navbar-brand{
+    font-family: sans-serif, Montserrat;
+    font-weight: 800;
+    font-size: 24px;
+}
+#nav.fixed{
+    background-color: transparent !important;
+    padding: 0;
+}
+.navbar .container-fluid .nav-link{
+    font-family: sans-serif, Inter;
+    font-weight: 500;
+    font-size: 18px;
+}
+.home{
+    background: #0C111F;
+    width: 1348px;
+    height: 960px;
+    left: 0px;
+    top: 0px;
+}
+.apple{
+    margin-left: 50px;
+    width: 464.6px;
+    height: 378.16px;
+    left: 0px;
+    top: 0px;
+}
+.hankor{
+    background: #F7F7F7;
+    width: 1440px;
+height: 180px;
+left: 0px;
+top: 1679px;
+}
+.hankor img{
+    margin-left: 7rem;
+    margin-top: 2rem;
+    width: 1179.21px;
+    height: 103.95px;
+}
