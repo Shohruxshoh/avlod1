@@ -3,7 +3,7 @@ body{
     padding: 0px;
 }
 .navbar{
-    background: #0C111F !important;
+    background-image: url('../image/Footer\ bg.png');
     transition: 0.3s linear;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
@@ -16,23 +16,195 @@ body{
     margin-left: 40px;
     margin-right: 5rem;
 }
-#nav .fixed{
-    background-color: #0C111F !important;
+#nav.fixed{
+    background-color: black !important;
     padding: 0;
+}
+.til{
+    width: 100px; 
+    color: #fff; 
+    font-size: 18px; 
+    background: transparent; 
+    border:none; 
+    box-shadow: none;
+}
+.carusel1{
+    margin-top: 5rem; 
+    margin-left: 7rem;
+}
+.maqsad{
+    font-weight: bold; 
+    color: #FFFFFF; 
+    font-size: 70px;
+}
+.titles .maqsad-info{
+    color: #FFFFFF; 
+    font-size: 20px; 
+    opacity: 0.7; 
+    margin-top: 32px;
+}
+.button{
+    margin-top:40px;
+}
+.button .btngold{
+    border-radius: 100px; 
+    background: linear-gradient(135deg, #F9EC7D 0%, #F5B100 100%);
+    padding: 13px 24px;
+}
+.button .btngold #icon-more{
+    font-size: 16px;
+    margin-left: 8px;
+}
+.button .btn-contact{
+    color: #FFFFFF;
+    font-size: 18px; 
+    margin-left:76px;
+}
+.button .btn-contact #icon-contact{
+    color: #F5B100; 
+    font-size: 20px;
+    margin-right:14px;
+}
+#maqsad2{
+    margin-top: 5rem; 
+    margin-left:-2rem;
+}
+.carusel1{
+    margin-top: 5rem; 
+    margin-left: 7rem;
+}
+.carusel1 #next1{
+    color:#F9EC7D; 
+    font-size:35px;
+}
+.about{
+    margin-left: 3rem;
+}
+#blogs{
+    padding-top:3rem
+}
+#blogs .text-center{
+    font-size:48px;
+}
+.apple img{
+    margin-left:4.5rem
+}
+.hakorlar{
+    margin-left:2.5rem
+}
+#courses{
+    padding-top:3rem
+}
+#courses .text-center{
+    font-size:48px; 
+}
+.nage1{
+    font-size: 48px;
+}
+.nage2{
+    font-size: 20px;  
+    color: #0C111F; 
+    opacity: 0.6;
+}
+.narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+}
+.icone{
+    margin-top:1.5rem; 
+    width: 16%;
+}
+.icone span i{
+    font-size: 30px; 
+    color:#7723FE;
+}
+.col-9 h1{
+    font-size: 24px; 
+    font-weight: bold;
+}
+.gal{
+    font-size:48px;
+}
+.col-7 img{
+    height: 438px;
+}
+#boglanish{
+    font-weight: bold; 
+    font-size: 48px; 
+    padding:30px
+}
+#contact .row{
+    margin-left: 3rem;
+}
+.single_contact h3{
+    font-weight: bold; 
+    font-size: 24px; 
+    padding: 1rem;
+}
+.sing_contact_iteam li{
+    list-style:none; 
+    margin-top:1rem;
+}
+#frm{
+    height: 291px; 
+    margin-top: -9px;
+}
+#phone{
+    margin-left: 23px;
+}
+.yuborish{
+    margin-top:1.5rem;
+}
+#lorem{
+    margin-top:3rem; 
+}
+.container-fluid h1{
+    font-weight: 800; 
+    font-size: 24px; 
+    color: #fff;
+}
+.container-fluid .col-md-4 p{
+    color: #fff;
+    opacity: 0.5;
+}
+.col-md-8 .row{
+    margin-left:6rem;
+}
+.footer-p{
+    color:#F9EC7D; 
+    font-size: 17px;
+}
+#partners{
+    border:none; 
+    background: transparent; 
+    color: #FFFFFF;
+}
+.ter{
+    color: #FFFFFF; 
+    opacity: 0.8; 
+    margin-top: 3rem; 
+    margin-left: 28rem;
+}
+#nav_footer{
+    background-image: url('../image/Footer\ bg.png')!important;
+    background-size: cover;
 }
 .navbar .container-fluid .nav-link{
     font-family: sans-serif, Inter;
     font-weight: 500;
     font-size: 18px;
     margin-left: 30px;
+    color: #FFFFFF;
 }
 .home{
-    background: #0C111F;
+    background-image: url('../image/background.png') ;
     width: 1349px;
-    height: 960px;
     left: 0px;
     top: 0px;
 }
+
 .apple{
     margin-left: 50px;
     width: 464.6px;
@@ -42,7 +214,7 @@ body{
 }
 .hankor{
     background: #F7F7F7;
-    width: 1349px;
+    width: 1350px;
 height: 180px;
 left: 0px;
 top: 1679px;
@@ -55,6 +227,7 @@ top: 1679px;
 }
 .card1{
     border:none;
+    width: 23.5rem;
 }
 .card1 img{
     border-radius: 20px 20px 0px 0px;
@@ -185,6 +358,7 @@ width: 518px;
 height: 301px;
 left: 80px;
 top: 3773px;
+box-shadow: 0px 10px 25px rgb(11, 170, 175);
 border-radius: 30px;
 }
 .rasm2{
@@ -195,6 +369,57 @@ top: 4287px;
 
 border-radius: 30px;
 }
+.single_contact{
+    background: #FFFFFF;
+box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+border-radius: 20px;
+height: 252px;
+}
+.form1{
+    width: 300px;
+    height: 37px;
+    margin: 10px;
+    border:none ;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.form2{
+    width: 630px;
+    height: 37px;
+    margin-left: 10px;
+    border:none ;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.form3{
+    width: 630px;
+    height: 140px;
+    margin: 10px;
+    border:none ;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px; 
+}
+.main_btn{
+    display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 9px 20px;
+color: #FFFFFF;
+width: 108px;
+height: 43px;
+right: 20px;
+top: 449.8px;
+font-size:14px;
+/* Ungu */
+
+background: linear-gradient(135deg, #8482FF 0%, #7723FE 100%);
+border-radius: 45px;
+}
+
 /* .rasm3{
     width: 522px;
 height: 229px;
@@ -209,3 +434,1174 @@ left: 838px;
 top: 4536px;
 border-radius: 30px;
 } */
+
+@media screen and (max-width: 1024px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /*LOADING...*/
+    .dot{
+        margin-top: 17rem;
+        margin-right: -0.5rem;
+        width: 90px;
+        height: 90px;
+    }
+    .dot2{
+        width: 90px;
+        height: 90px;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 1.7rem;
+        font-size: 3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 20rem;
+    }   
+    .navbar-nav li{
+        margin: 9px;
+        font-size: 1.3rem;
+    }
+    /*HOME*/
+    .home{
+        height:50rem;
+    }
+    .col-md-6{
+        margin: 23% auto;
+    }
+    .titles p{
+        font-size: 1.3rem;
+    }
+    .titles h3{
+        font-size: 2.3rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 11.3rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.8rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.1rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 4rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main{
+        margin-top: 6rem;
+    }
+    .info .main li{
+        font-size: 20px;
+    }
+    .info .main li .firstSpan{
+        font-size: 20px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 976px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /*LOADING...*/
+    .dot{
+        margin-top: 8rem;
+        margin-right: -0.5rem;
+        width: 80px;
+        height: 80px;
+    }
+    .dot2{
+        width: 80px;
+        height: 80px;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 1.5rem;
+        font-size: 2.7rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 20rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1.5rem;
+    }
+    /*HOME*/
+    .home{
+        height:46rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .titles p{
+        font-size: 1.3rem;
+    }
+    .titles h3{
+        font-size: 2.3rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 7rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.8rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.1rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 4rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 13px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /*LOADING...*/
+    .dot{
+        margin-top: 8rem;
+        margin-right: -0.5rem;
+        width: 80px;
+        height: 80px;
+    }
+    .dot2{
+        width: 80px;
+        height: 80px;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.7rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 14rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .home{
+        height:40rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .titles p{
+        font-size: 1.3rem;
+    }
+    .titles h3{
+        font-size: 2.3rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 14rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 4rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /*LOADING...*/
+    .dot{
+        margin-top: 6rem;
+        margin-right: 6.5rem;
+        width: 50px;
+        height: 50px;
+    }
+    .dot2{
+        width: 50px;
+        height: 50px;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.7rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 9rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .home{
+        height:36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles p{
+        font-size: 1rem;
+    }
+    .titles h3{
+        font-size: 2rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 9rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /*LOADING...*/
+    .dot{
+        margin-top: 6rem;
+        margin-right: 6.5rem;
+        width: 50px;
+        height: 50px;
+    }
+    .dot2{
+        width: 50px;
+        height: 50px;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.7rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 8rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .home{
+        height:36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles p{
+        font-size: 1rem;
+    }
+    .titles h3{
+        font-size: 2rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 7.5rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 370px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /*LOADING...*/
+    .dot{
+        margin-top: 2rem;
+        margin-right: 8rem;
+        width: 50px;
+        height: 50px;
+    }
+    .dot2{
+        width: 50px;
+        height: 50px;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.7rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 7.5rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles p{
+        font-size: 1rem;
+    }
+    .titles h3{
+        font-size: 2rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 7rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 315px) and (max-width: 330px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar .container-fluid .navbar-brand{
+        padding: 0.5rem;
+        font-size: 16px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 10px;
+    }
+    .til{
+        margin-left: 118px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 25px;
+    }
+    .titles .maqsad-info{
+        color: #FFFFFF;
+        font-size: 14px;
+        opacity: 0.7;
+        margin-top: 9px;
+        width: 16rem;
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .button{
+        margin-top: auto;
+        margin-left: 6rem;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 9px;
+    }
+    .button .btngold #icon-more {
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 12px;
+        margin-left: 11px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 13px;
+        margin-right: 6px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: -3rem;
+    }
+    .carusel1 {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        width: 15rem;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 0px !important;
+    }
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 11px;
+    }
+    .apple img{
+        margin-left: -3rem;
+        width: 244px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar{
+        margin-left:0px;
+        margin-top: -13rem;
+    }
+    #courses{
+        padding-top:0rem;
+    }
+    #courses .text-center{
+        font-size:26px;
+        margin-top: -5rem; 
+    }
+    .card1{
+        width: 18.5rem;
+        margin-right: 1rem;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 10px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 26px;
+    }
+    .col-md-6{
+        margin: 0px;
+    }
+    .nage1{
+        font-size: 26px;
+    }
+    .nage2{
+        font-size: 13px;
+    }
+    .rasm1 {
+        width: 302px;
+        height: 190px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .icone span i {
+        font-size: 20px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 110px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 24px;
+    }
+    #contact .row{
+        margin-left: 0rem;
+    }
+    .single_contact{
+        height: 182px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 269px;
+        height: 30px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 268px;
+        height: 37px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 269px;
+        height: 80px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .main_btn{
+        margin-bottom: 1rem;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .home{
+        height:29rem;
+    }
+
+    .titles p{
+        font-size: 1rem;
+    }
+    .titles h3{
+        font-size: 2rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+

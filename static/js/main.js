@@ -6,3 +6,5 @@ window.addEventListener("scroll", function () {
 function navBack() {
     let nav = document.getElementById('nav').classList.toggle("change");
 }
+
+  

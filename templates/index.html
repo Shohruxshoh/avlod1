@@ -9,8 +9,42 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="{% static "css/index.css" %}">
-    </head>
+<style>
+  .down{
+    display: flex;
+    justify-content: center;
+    padding:80px 0 ;
+    font-size: 3rem;
+  }
+  .card-text{
+    height: 40px;
+    overflow: hidden;
+  }
+  .showContent .card-text{
+    height: auto;
+  } 
+  .img10{
+    border-radius: 30px;
+  }
+  .btngold{
+    box-shadow: 5px 5px 15px rgba(190, 182, 65, 0.959); 
+  }
+  .link{
+    color: #2b023b;
+    margin-top:-5px;
+    padding:0px;
+  }
+  .rasmg{
+    box-shadow: 5px 5px 25px grey;
+    border-radius: 31px;
+  }
+</style>
+
+      </head>
     <body>
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -21,143 +55,371 @@
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link active" style='color:#FFFFFF;' aria-current="page" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Courses</a>
+                    <a class="nav-link" href="#courses">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="#blogs">Blogs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Galereya</a>
+                    <a class="nav-link" href="#galereya">Galereya</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
-                <span class="navbar-text">
-                    Uzbek
-                </span>
+                <select class="form-select form-select-sm til" style='border:none; box-shadow: none;' aria-label=".form-select-sm example">
+                  
+                  <option value="1" style='background: black; color: #fff; font-size: 18px;'>Uzbek</option>
+                  <option value="2" style='background: black; color: #fff; font-size: 18px;'>Rus</option>
+                </select>
               </div>
             </div>
         </nav>
-        <section class="home mt-5">
+      <section  class="home mt-5">
           <div class="container">
               <div class="row mt-5">
-                  <div class="col-md-6">
-                      <div class="titles" style='margin-top:50px;'>
-                          <p>Welcome to my website</p>
-                          <h3>I'm Nasriddinov Shohrux Full stack developer</h3>
-                          <div class="button">
-                              <a href="#portfolio">Hire me</a>
+                  <div id='maqsad2' class="col-md-6" style=''>
+                      <div class="titles" >
+                          <h1  class='maqsad' style=''>Maqsadimiz</h1>
+                          <h3 class="maqsad-info" style=''>O‘zbekistonda inqirozga uchrayotgan korxonalar tizimini
+                            qurgan holda inqirozdan qutulishga sababchi bo‘lish</h3>
+                          <div class="button" style=''>
+                              <a  class='btn btngold' style='' href="#about">Read more  <i id="icon-more" style='' class="bi bi-arrow-right-circle-fill"></i></a>
+                              <a class='btn btn-contact' style='' href='#contact'><i id='icon-contact' style='' class="bi bi-play-circle"></i>Contact Us</a>
                           </div>
                       </div>
                   </div>
+                  <div class='col-md-5 carusel1' style=''>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top img10" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                          <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top img10" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                          <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top img10" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <i id="next1" style='' class="bi bi-arrow-right-circle-fill"></i>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
               </div>
-          </div>
+              <div class='down'>
+               <a href='#contact' ><i style='color:#F5B100;' class="bi bi-arrow-down-circle-fill"></i></a>
+              </div>
+            </div>
       </section>
           
-        
-        <div class="container m-5" >
-            <div class="row" >
+        <!--About-->
+<div id="about" class="container m-5"  >
+            <div class="row justify-content-center about" style="" >
               <div class="col">
                <div class="p-3">
                 <h1>Biz haqimizda</h1>   
-                Oʻquv markazimizning maqsadlari va oʻziga xos qadriyatlari mavjud. Oʻzbekistonda inqirozga uchraryotgan korxonalarni tashkil qilgan holda inqirozdan qutulishga sababchi boʻlish. Yoshlarga kelajakda oʻz ishini mutaxasisi boʻlishni istagan, bizneslarda yoki shaxsiy biznesda rahbar lavozimida boʻlishni istagan yoshlarga,marketing, moliya, sotuv va boshqaruv bilimlarini berib boramiz va Oʻzbekiston ahliga yordam berish uchun tayyorlaymiz. Shunda ular oʻzlariga ham va oilalariga ham yordam berishadi.
+                <p> Oʻquv markazimizning maqsadlari va oʻziga xos qadriyatlari mavjud. Oʻzbekistonda inqirozga uchraryotgan korxonalarni tashkil qilgan holda inqirozdan qutulishga sababchi boʻlish. Yoshlarga kelajakda oʻz ishini mutaxasisi boʻlishni istagan, bizneslarda yoki shaxsiy biznesda rahbar lavozimida boʻlishni istagan yoshlarga,marketing, moliya, sotuv va boshqaruv bilimlarini berib boramiz va Oʻzbekiston ahliga yordam berish uchun tayyorlaymiz. Shunda ular oʻzlariga ham va oilalariga ham yordam berishadi.
                 <br>Bizning qadriyatlarimiz:<br>
                 1. Halollik<br>
                 2. Adolat<br>
                 3. Mardlik<br>
-                4. Natija</div>
+                4. Natija
+                </p>
+              </div>
               </div>
               <div class="col">
                 <div class="p-3 apple">
-                    <img width="100%" src='{% static "image/apple.png" %}'>
+                    <img style='' width="100%" src='{% static "image/apple.png" %}'>
                 </div>
               </div>
             </div>
-        </div>
-
-
-          <div class="row g-0">
-            <div class="col-sm-6 col-md-12 hankor"><img width='100%' src='{% static "image/hamhor.png" %}'</div>
           </div>
+          <div class="container m-5" >
+          <div class='row justify-content-center'>
+        <div class="col-sm-6 col-md-12"><img class="hakorlar" style='' width='100%' src='{% static "image/hamhor.png" %}'></div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="container mt-5" >
-          <div class="row align-items-center" style='--bs-gutter-x: 0'>
-            <h1 class='text-center' style='margin-bottom:2rem; color: #0C111F; font-size: 48px;'>Bizning kurslar</h1>
-            <div class="col" style='margin-right:-2.5rem;'>
-              <div class="card card1" style="margin-left:6rem; width: 23rem;">
-                <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" class="card-img-top" alt="...">
-                <div class='salom'> <p class='p1'>8 ta dars</p></div>
+
+      <div id='courses' class='container mt-5' style=''>
+        <h1 class='text-center' style=''>Bizning kurslar</h1>
+        <div class="row" style='margin-right:-3rem; padding-top: 2rem;'>
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item" style="height:400px;"> 
+              <div class='col-4'>
+                <div class="card card1" >
+                  <div>
+                    <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+                    <p class='salom'><span style='margin-top:-2px;'>8 ta dars</span></p>  
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Notiqlik kursi 8 ta darsdan iborat boʻlib, bu kursimizda ommani oʻziga jalb etish va ommaga oʻz fikrini toʻliq yetkaza olish qobiliyatini shakllantirish oʻrgatiladi. Bu darsimiz nazariy va amaliy qismdan iborat. Nazariy qismda siz, biznes bilimlarini oʻrganasiz. Amaliy qismda esa, ishlab turgan bizneslarda ishlab malakangizni oshirasiz. Darslarimiz vazifalarga ajratilgan boʻladi. Bir vazifani bajarsangiz ikkinchisiga oʻtasiz. 
+                      Nazariy va amaliy vazifalarni muvaffaqiyatli yakunlaganingizdan soʻng Avlod21 bines akademiyasi tomonidan sertifikat beriladi.</p><a href="javasicript:void()" class='btn link'>yana</a>
+                    <div class='row'>
+                      <div class='col-6'>
+                        <p class='narx8'>Davomiyligi: 3 oy</p>
+                        <p class='narx8'><b>3000000</b> so`m</p>
+                      </div>
+                      <div class='col-6 sotib' ><a  style="" href="#contact" class="btn main_btn">sotib olish</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div> 
+           <div class="item"> 
+            <div class='col-4'>
+              <div class="card card1" style="">
+                <div>
+                  <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+                  <p class='salom'><span style='margin-top:-2px;'>8 ta dars</span></p>  
+                </div>
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              <div class='row narx'>
-                <div class='col-6'>
-                  <p>Davomiyligi: 2 oy</p> <br>
-                  <p style='margin-top:-20px;'>3.000,000 so‘m</p>
-                </div>
-                <div class='col-6'>
-                  <a style='font-size:14px; color:#fff;' href="#" class="btn btn1">sotib olish</a>
+                  <div> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
+                  <div class='row'>
+                    <div class='col-6'>
+                      <p class='narx8'>Davomiyligi: 5 oy</p>
+                      <p class='narx8'><b>3000000</b> so`m</p>
+                    </div>
+                    <div class='col-6'><a style="font-size:14px" href="#contact" class="btn main_btn">sotib olish</a></div>
+                  </div>
                 </div>
               </div>
+            </div>
+         </div>
+         <div class="item"> 
+          <div class='col-4'>
+            <div class="card card1" style="">
+              <div>
+                <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+                <p class='salom'><span style='margin-top:-2px;'>8 ta dars</span></p>  
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some Some quick example text to build Lorem lorem lhbkjbgkugggggggbbbbbbbbbbbkSome quick example text to build Lorem lorem lhbkjbgkugggggggbbbbbbbbbbbk quick example text to build on the card title and make up the bulk of the card's content.</p><a href="javasicript:void()" class='link'>yana</a>
+                <div class='row'>
+                  <div class='col-6'>
+                    <p class='narx8'>Davomiyligi: 4 oy</p>
+                    <p class='narx8'><b>3000000</b> so`m</p>
+                  </div>
+                  <div class='col-6'><a style="font-size:14px" href="#contact" class="btn main_btn">sotib olish</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div> 
+        </div>
+      </div>
+    </div>
+
+
+      <div id='blogs' class='container mt-5' style=''>
+        <h1 class='text-center' style=' '>Bizning blog</h1>
+        <div class='row' style='margin-right:-3rem; padding-top: 2rem;'>
+          <div class="owl-carousel owl-theme">
+          <div class="item" style='height: 26rem; '>
+          <div class='col-4'>
+            <div class="card card1" style=" background: #F7F7F7;">
+              <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+              <div class="card-body" >
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="container mt-5">
-          <div class="row align-items-center" style='--bs-gutter-x: 0'>
-            <h1 class='text-center' style='margin-bottom:2rem; color: #0C111F; font-size: 48px;'>Bizning blog</h1>
-            <div class="col" style='margin-right:-2.5rem;'>
-              <div class="card card2" style="margin-left:6rem; width: 23rem; background: #F7F7F7;">
-                <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 style="font-size:24px;" class="card-title">O‘quv markazni tizimlash</h5>
-                  <p style="font-size:18px;" class="card-text">Ishtirokchilar o‘zlari uchun ajoyib ma’lumotlar olishdi. O‘quv markazni tizimlashtirish kursining 11-bosqichiga start berildi.</p>
-                </div>
-              </div>
+        <div class="item" style='height: 26rem; '>
+          <div class='col-4'>
+            <div class="card card1" style="">
+              <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+              <div class="card-body" >
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
         </div>
+        <div class="item" style='height: 26rem; '>
+          <div class='col-4'>
+            <div class="card card1" style="">
+              <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+              <div class="card-body" >
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
 
-        <div class='container mt-5'>
-          <div class='row'>
-            <div class='col-6'>
-              <h1 style="font-size: 48px;"> Nega aynan Avlod21</h1>
-              <p style="font-size: 20px;  color: #0C111F; opacity: 0.6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.</p>
+<!--Nega-->
+        <div  class='container mt-5'>
+          <div class='row justify-content-center'>
+            <div class='col-md-6'>
+              <h1 class='nage1' style=""> Nega aynan Avlod21</h1>
+              <p class='nage2' style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.</p>
               <img class="rasm1" src="{% static 'image/Rect.png' %}">
             </div>
-            <div class='col-6'>
-              <div class='row'><div class="col-3 icone"><span></span></div> <div class="col-9"><h1 style='font-size: 24px; font-weight: bold;'>Tengsiz mutaxassis</h1><p >Agar siz mutaxassis bo‘lsangiz ish izlab yurmaysiz, ish sizni izlab yuradi, eng kuchli mutaxassis bo'ling.</p></div>
-            </div>
-            </div>
-            </div>
+            <div class='col-md-6' style='margin-top:3rem'>
+              <div class='row' style='margin-top:1rem;'><div class="col-3 icone" ><span><i style='' class="bi bi-wallet-fill"></i></span></div> <div class="col-9"><h1 style=''>Tengsiz mutaxassis</h1><p >Agar siz mutaxassis bo‘lsangiz ish izlab yurmaysiz, ish sizni izlab yuradi, eng kuchli mutaxassis bo'ling.</p></div>
+              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style=''  class="bi bi-people-fill"></i></span></div> <div class="col-9"><h1 style=''>Kuchli va ahil jamoa</h1><p >Siz yolg‘iz 7 oyda bajargan ishingizni, bir haftada jamoangiz bilan tugatishingiz mumkin.</p></div>
+              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style='' class="bi bi-heart-fill"></i></span></div> <div class="col-9"><h1 style=''>Moliyaviy erkinlik</h1><p >Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.</p></div>
+            </div>    
           </div>
         </div>
+      </div>
+      </div>
+    </div>
+   
         <!-- Galeriya -->
-        <div class='container mt-5'>
+        <div id='galereya' class='container mt-5'>
           <div class='row'>
-            <h1 style="font-size:48px;">Galereya</h1>
+            <h1 class='gal' style="">Galereya</h1>
             <div class='col-7'>
-              <img width="100%" class="rasm2" src='{% static "image/rasm1.png" %}'>
+              <img width="100%" class='rasmg' style='' src='{% static "image/rasm1.png" %}'>
             </div>
             <div class='col-5'>
-              <img width="100%"  src='{% static "image/rasm1.png" %}'>
-              <div class='row mt-5'>
-                <div class='col-6'><img width="100%"  src='{% static "image/rasm1.png" %}'></div>
-                <div class='col-6'><img width="100%" src='{% static "image/rasm1.png" %}'></div>
+              <img width="100%" class='rasmg' style='margin-bottom: 1rem;'  src='{% static "image/rasm1.png" %}'>
+              <div class='row'>
+                <div class='col-6'><img width="100%" class='rasmg' src='{% static "image/rasm1.png" %}'></div>
+                <div class='col-6'><img width="100%" class='rasmg' src='{% static "image/rasm1.png" %}'></div>
               </div>
             </div>
           </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!--Contact-->
+        <div id='contact' class='container mt-5' >
+          <h1 id="boglanish" class='text-center' style=''>Biz bilan bog‘lanish</h1>
+            <div class="row justify-content-center" style="">
+							<div class="col-md-5 col-sm-5 col-xs-12">
+								<div class="single_contact">
+									<h3 style=''>Bosh Idora</h3>
+									<ul class="sing_contact_iteam">
+										<li style=''><i class="bi bi-geo-alt-fill" style='margin-right: 5px;'></i>  Toshkent, Beruniy m, Mashhura o‘quv markazi, 3-qavat</li>
+										<li style=''><i class="bi bi-telephone-fill" style='margin-right: 5px;'></i>  +998 55 500 21 00</li>			
+										<li style=''><i class="bi bi-envelope-fill" style='margin-right: 5px;'></i>  Avlod21ba@mail.ru</li>
+									</ul>
+								</div>
+							</div> <!-- END COL -->
+							<div class="col-md-7 col-sm-7 col-xs-12">
+								<div class="single-contact">
+									<form id="contact-form" method="POST">
+										{% csrf_token %}
+										<div id='frm' class="row" style=''>
+											<div class="form-group col-md-6">
+												<div class="contact_form " >
+													<input type="text" name="name" class='form1' placeholder="Ism" required="required">
+												</div>
+											</div>
+											
+											<div class="form-group col-md-6">
+												<div class="contact_form">
+													<input type="text" name="phone" id='phone'  class="form1" placeholder="Telefon" required="required" style=''>
+												</div>
+											</div>
+											
+											<div class="form-group col-md-12">
+												<div class="contact_form">
+													<input type="email" name="Elektron pochta" class="form2" placeholder="Email" style=' ' >
+												</div>
+											</div>
+										
+											<div class="form-group col-md-12">
+												<div class="contact_form">
+													<textarea rows="6" name="Xabar" class="form3" placeholder="Xabar" required="required" ></textarea>
+												</div>
+											</div>
+										</div>
+                    <div class="contact_form_btn text-center yuborish" style=''>
+                      <button type="submit" value="xabar yuborish" id="submitButton" class="main_btn" title="Submit Your Message!">Yuborish</button>
+                    </div>
+									</form>
+								</div>
+							</div> <!-- END COL -->
+						</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+        <nav id="nav_footer" class="navbar navbar-expand-lg navbar-dark bg-dark mt-5">
+          <div class="container-fluid m-5">
+            <div class='row'>
+              <div class='col-md-4'>
+                <h1 style=''>Avlod21</h1>
+                <p style=''>Dengan BalonKUN kamu bisa merasakan pengalaman baru dengan menaiki balon udara dengan pemandangan sekitar yang sangat indah untuk memanjakan mata anda. </p>
+                <p class='mt-5' style=''>By West Coast Agency - Copyright © 2022</p>
+              </div>
+              <div class='col-md-8'>
+                <div class='row' style=''>
+                  <div  class='col-4'>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true" style='border:none; background: transparent; color: #FFFFFF;'>
+                    <p class='footer-p' style=''> Home</p>
+                    </a>
+                    <a id='partners' href="#about" class="list-group-item list-group-item-action" style=''>About Us</a>
+                    <a id='partners' href="#" class="list-group-item list-group-item-action" style=''>Partners</a>
+                    <a id='partners' href="#courses" class="list-group-item list-group-item-action" style=''>Courses</a>
+                  </div>
+                  <div class='col-4'>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true" style='border:none; background: transparent; color: #FFFFFF;'>
+                      <p class='footer-p'  style=' '> Our Blog</p>
+                    </a>
+                    <a id='partners' href="#galereya" class="list-group-item list-group-item-action" style=''>Gallery</a>
+                    <a id='partners' href="#blogs" class="list-group-item list-group-item-action" style=''>Events</a>
+                    <a id='partners' href="#blogs" class="list-group-item list-group-item-action" style=''>Videos</a>
+                  </div>
+                  <div class='col-4'>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true" style='border:none; background: transparent; color: #FFFFFF;'>
+                      <p class='footer-p' style=''>Follow Us</p>
+                    </a>
+                    <a id='partners' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Favlod21%2F%3Ffbclid%3DIwAR378pOprz1QcwtlISPUWn52lrQVnmcRf9NZxA62uL1hqOzjBYAxEeNv-QU&h=AT1eQNkI8yuh7cFOc0_zaQCEMOoa5ul1W_fiaZPaKto111FaYs2XiZFR9FrtcdQM3KvVz_SVk1hiT1hYvBi94tAW0IHPymBuD8lpNcLrylYBVGKZgMXCqp37ifwUXkqm2tOjpw" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-facebook"></i> Facebook</a>
+                    <a id='partners' href="https://t.me/avlod21" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-telegram"></i> Telegram</a>
+                    <a id='partners' href="https://www.instagram.com/avlod21/" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-instagram"></i> Instagram</a>
+                  </div>
+                </div>
+                
+                <p class='ter' style=''>Terms & Conditions  <span style='padding-left:2rem'> Privacy Policy </span></p> 
+              
+              </div>
+            </div>
+          </div>
+      </nav>
         <script src="{% static 'js/main.js' %}"></script>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(".link").on('click', function(){
+        $(this).parent().toggleClass("showContent");
+
+        var replaceText = $(this).parent().hasClass("showContent") ? "kamroq" : "yana";
+        $(this).text(replaceText);
+      })
+    </script>
+    <script>
+       $('.owl-carousel').owlCarousel({
+        margin:10,
+        loop:true,
+        autoHeight:true,
+        autoWidth:true,
+        items:1
+    }) 
+    </script>
+</body>
 </html>
