@@ -12,4 +12,4 @@ class GenreTranslationOptions(TranslationOptions):
 
 @register(Courses)
 class MovieTranslationOptions(TranslationOptions):
-    fields = ('name', 'description')
+    fields = ('name', 'description', 'davomiyligi')

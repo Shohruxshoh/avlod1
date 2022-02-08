@@ -11,7 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="{% static "css/index.css" %}">
 <style>
   .down{
@@ -20,8 +20,14 @@
     padding:80px 0 ;
     font-size: 3rem;
   }
+  .hello{
+    height: 93px;
+    width: 348px;
+    overflow: hidden;
+  }
   .card-text{
-    height: 40px;
+    height: 44px;
+    width: 295px;
     overflow: hidden;
   }
   .showContent .card-text{
@@ -34,14 +40,63 @@
     box-shadow: 5px 5px 15px rgba(190, 182, 65, 0.959); 
   }
   .link{
-    color: #2b023b;
-    margin-top:-5px;
-    padding:0px;
+    color: #2b029b;
+    margin-top: -78px;
+    padding: 0px;
+    margin-left: 316px;
   }
   .rasmg{
     box-shadow: 5px 5px 25px grey;
     border-radius: 31px;
   }
+  .item1{
+    height:700px !important;
+  }
+  #oy{
+    margin-top: -33px;
+  }
+  .blog1{
+    width: 375px;
+    height: 144px;
+    background: #F7F7F7;
+    border-radius: ;
+  }
+  #slider input{
+    width:0px;
+}
+#slider{
+    height:22vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style:preserve-3d;
+}
+#slider label{
+    margin: auto;
+    width:70%;
+    height:100%;
+    border-radius:4px;
+    position: absolute;
+    left:0;
+    right:0;
+    cursor:pointer;
+    transition: transform 0.4s ease;
+}
+#s1:checked ~ #slider2, #s2:checked ~ #slider3,
+#s3:checked ~ #slider1{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0.2);
+  transform: translate3d(-15%, 0, -100px)
+}
+#s1:checked ~ #slider3, #s2:checked ~ #slider1,
+#s3:checked ~ #slider2{
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%, 0, -200px)
+}
+#s1:checked ~ #slider1, #s2:checked ~ #slider2,
+#s3:checked ~ #slider2{
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(1, 0, 0)
+}
+
 </style>
 
       </head>
@@ -92,25 +147,26 @@
                           </div>
                       </div>
                   </div>
-                  <div class='col-md-5 carusel1' style=''>
+                  <div class='col-md-6 carusel1' style=''>
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top img10" alt="...">
-
-                        </div>
-                        <div class="carousel-item">
-                          <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top img10" alt="...">
-
-                        </div>
-                        <div class="carousel-item">
-                          <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top img10" alt="...">
-                        </div>
+                          <section id='slider'>
+                            <input type='radio' name='slider' id="s1">
+                            <input type='radio' name='slider' id="s2" checked>
+                            <input type='radio' name='slider' id="s3">
+                            <label for="s1" id='slider1'>
+                                <img class="img10" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" height="100%" width='100%'>
+                            </label>
+                            <label for="s2" id='slider2'>
+                                <img class="img10" src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&w=1000&q=80" height="100%" width='100%'>
+                            </label>
+                            <label for="s3" id='slider3'>
+                                <img class="img10" src="https://thumbs.dreamstime.com/b/d-image-abstract-tunnel-diagonal-black-white-stripes-optical-illusion-168695979.jpg" height="100%" width='100%'>
+                            </label>
+                        </section>
                       </div>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i id="next1" style='' class="bi bi-arrow-right-circle-fill"></i>
-                        <span class="visually-hidden">Next</span>
-                      </button>
+                      </div>
                     </div>
                   </div>
               </div>
@@ -153,9 +209,9 @@
 
       <div id='courses' class='container mt-5' style=''>
         <h1 class='text-center' style=''>Bizning kurslar</h1>
-        <div class="row" style='margin-right:-3rem; padding-top: 2rem;'>
+        <div id='cart' class="row" style='margin-right:-3rem; padding-top: 2rem;'>
           <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="item" style="height:400px;"> 
+            <div class="item" style=""> 
               <div class='col-4'>
                 <div class="card card1" >
                   <div>
@@ -167,11 +223,11 @@
                     <p class="card-text">Notiqlik kursi 8 ta darsdan iborat boʻlib, bu kursimizda ommani oʻziga jalb etish va ommaga oʻz fikrini toʻliq yetkaza olish qobiliyatini shakllantirish oʻrgatiladi. Bu darsimiz nazariy va amaliy qismdan iborat. Nazariy qismda siz, biznes bilimlarini oʻrganasiz. Amaliy qismda esa, ishlab turgan bizneslarda ishlab malakangizni oshirasiz. Darslarimiz vazifalarga ajratilgan boʻladi. Bir vazifani bajarsangiz ikkinchisiga oʻtasiz. 
                       Nazariy va amaliy vazifalarni muvaffaqiyatli yakunlaganingizdan soʻng Avlod21 bines akademiyasi tomonidan sertifikat beriladi.</p><a href="javasicript:void()" class='btn link'>yana</a>
                     <div class='row'>
-                      <div class='col-6'>
+                      <div id='oy' class='col-6'>
                         <p class='narx8'>Davomiyligi: 3 oy</p>
                         <p class='narx8'><b>3000000</b> so`m</p>
                       </div>
-                      <div class='col-6 sotib' ><a  style="" href="#contact" class="btn main_btn">sotib olish</a></div>
+                      <div id='oy' class='col-6 sotib' ><a  style="" href="#contact" class="btn main_btn">sotib olish</a></div>
                     </div>
                   </div>
                 </div>
@@ -224,17 +280,19 @@
     </div>
 
 
+
+
       <div id='blogs' class='container mt-5' style=''>
         <h1 class='text-center' style=' '>Bizning blog</h1>
-        <div class='row' style='margin-right:-3rem; padding-top: 2rem;'>
+        <div id="blog11" class='row' style='margin-right:-3rem; padding-top: 2rem;'>
           <div class="owl-carousel owl-theme">
           <div class="item" style='height: 26rem; '>
           <div class='col-4'>
             <div class="card card1" style=" background: #F7F7F7;">
               <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
-              <div class="card-body" >
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card-body blog1" >
+                <h5 class="card-title">O‘quv markazni tizimlash</h5>
+                <p class="hello">Ishtirokchilar o‘zlari uchun ajoyib ma’lumotlar olishdi. O‘quv markazni tizimlashtirish kursining 11-bosqichiga start berildi.</p>
               </div>
             </div>
           </div>
@@ -244,8 +302,8 @@
             <div class="card card1" style="">
               <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
               <div class="card-body" >
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">O‘quv markazni tizimlash</h5>
+                <p class="card-text">Ishtirokchilar o‘zlari uchun ajoyib ma’lumotlar olishdi. O‘quv markazni tizimlashtirish kursining 11-bosqichiga start berildi.</p>
               </div>
             </div>
           </div>
@@ -270,13 +328,13 @@
           <div class='row justify-content-center'>
             <div class='col-md-6'>
               <h1 class='nage1' style=""> Nega aynan Avlod21</h1>
-              <p class='nage2' style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.</p>
+              <p class='nage2' style="">O'z korxonangizda tizimli ishni yo'lga qo'yishni aynan biz bilan o'rganing. </p>
               <img class="rasm1" src="{% static 'image/Rect.png' %}">
             </div>
             <div class='col-md-6' style='margin-top:3rem'>
-              <div class='row' style='margin-top:1rem;'><div class="col-3 icone" ><span><i style='' class="bi bi-wallet-fill"></i></span></div> <div class="col-9"><h1 style=''>Tengsiz mutaxassis</h1><p >Agar siz mutaxassis bo‘lsangiz ish izlab yurmaysiz, ish sizni izlab yuradi, eng kuchli mutaxassis bo'ling.</p></div>
-              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style=''  class="bi bi-people-fill"></i></span></div> <div class="col-9"><h1 style=''>Kuchli va ahil jamoa</h1><p >Siz yolg‘iz 7 oyda bajargan ishingizni, bir haftada jamoangiz bilan tugatishingiz mumkin.</p></div>
-              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style='' class="bi bi-heart-fill"></i></span></div> <div class="col-9"><h1 style=''>Moliyaviy erkinlik</h1><p >Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit.</p></div>
+              <div class='row' style='margin-top:1rem;'><div class="col-3 icone" ><span><i style='' class="bi bi-wallet-fill"></i></span></div> <div class="col-9"><h1 style=''>Tengsiz mutaxassis</h1><p >Marketing Boshqaruv Sotuv va Moliya bo'yicha mutaxassis bo'lasiz.</p></div>
+              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style=''  class="bi bi-people-fill"></i></span></div> <div class="col-9" style='margin-left:5px;'><h1 style=''>Kuchli va ahil jamoa</h1><p >Siz taktik va strategik fikrlay oladigan, mustaqil va sifatli ishlay oladigan, ahil va jonkuyar jamoada bo'lasiz </p></div>
+              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style='' class="bi bi-heart-fill"></i></span></div> <div class="col-9" style='margin-left:8px;'><h1 style=''>Moliyaviy erkinlik</h1><p >Kuchli mutaxassislar katta loyihalarni yuritadi, katta loyihalar yaxshi daromad olib keladi, yaxshi daromadga siz ham ega bo'ling.</p></div>
             </div>    
           </div>
         </div>
@@ -327,19 +385,19 @@
 											
 											<div class="form-group col-md-6">
 												<div class="contact_form">
-													<input type="text" name="phone" id='phone'  class="form1" placeholder="Telefon" required="required" style=''>
+													<input type="text" name="phone" id='phone'  class="form1" placeholder="Telefon" required="required" style='margin-left:30px;'>
 												</div>
 											</div>
 											
 											<div class="form-group col-md-12">
 												<div class="contact_form">
-													<input type="email" name="Elektron pochta" class="form2" placeholder="Email" style=' ' >
+													<input type="email" name="email" class="form2" placeholder="Email" style=' ' >
 												</div>
 											</div>
 										
 											<div class="form-group col-md-12">
 												<div class="contact_form">
-													<textarea rows="6" name="Xabar" class="form3" placeholder="Xabar" required="required" ></textarea>
+													<textarea rows="6" name="message" class="form3" placeholder="Xabar" required="required" ></textarea>
 												</div>
 											</div>
 										</div>
@@ -363,7 +421,8 @@
             <div class='row'>
               <div class='col-md-4'>
                 <h1 style=''>Avlod21</h1>
-                <p style=''>Dengan BalonKUN kamu bisa merasakan pengalaman baru dengan menaiki balon udara dengan pemandangan sekitar yang sangat indah untuk memanjakan mata anda. </p>
+                <p style=''>Hech narsa o‘z-o‘zidan, harakat va irodasiz, qurbon va mehnatsiz yuzaga chiqmaydi.
+                  Muvaffaqiyatning 97% qismi bu - MATONAT </p>
                 <p class='mt-5' style=''>By West Coast Agency - Copyright © 2022</p>
               </div>
               <div class='col-md-8'>
@@ -404,13 +463,18 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
+  <script>
       $(".link").on('click', function(){
         $(this).parent().toggleClass("showContent");
 
         var replaceText = $(this).parent().hasClass("showContent") ? "kamroq" : "yana";
         $(this).text(replaceText);
-      })
+      });
+      $('.link').on('click', function(){
+        $('.owl-stage-outer').toggleClass("item1");
+        var replaceText = $(this).parent().hasClass("showContent") ? "kamroq" : "yana";
+        $(this).text(replaceText);
+      });
     </script>
     <script>
        $('.owl-carousel').owlCarousel({

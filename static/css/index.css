@@ -30,7 +30,7 @@ body{
 }
 .carusel1{
     margin-top: 5rem; 
-    margin-left: 7rem;
+    margin-left: 0rem !important;
 }
 .maqsad{
     font-weight: bold; 
@@ -152,8 +152,9 @@ body{
     margin-top: -9px;
 }
 #phone{
-    margin-left: 23px;
+    margin-left: 52px !important;
 }
+
 .yuborish{
     margin-top:1.5rem;
 }
@@ -187,6 +188,7 @@ body{
     margin-top: 3rem; 
     margin-left: 28rem;
 }
+
 #nav_footer{
     background-image: url('../image/Footer\ bg.png')!important;
     background-size: cover;
@@ -568,21 +570,9 @@ border-radius: 30px;
     }
 }
 
-@media screen and (max-width: 976px){
+/* @media screen and (max-width: 976px){
     html, body{
         overflow-x: hidden;
-    }
-
-    /*LOADING...*/
-    .dot{
-        margin-top: 8rem;
-        margin-right: -0.5rem;
-        width: 80px;
-        height: 80px;
-    }
-    .dot2{
-        width: 80px;
-        height: 80px;
     }
     .navbar > button{
         border: none!important;
@@ -591,9 +581,365 @@ border-radius: 30px;
         box-shadow: none!important;
         outline: none!important;
     }
-    .navbar-brand{
-        padding: 1.5rem;
-        font-size: 2.7rem;
+    .navbar .container-fluid .navbar-brand{
+        padding: 0.5rem;
+        font-size: 18px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 13px;
+    }
+    .til{
+        margin-left: 167px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7.5rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 47px;
+    }
+    .titles .maqsad-info {
+        color: #FFFFFF;
+        font-size: 25px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 44rem;
+        margin-left: 4rem;
+        text-align: center;
+        margin-left: -5rem;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 16px;
+        padding: 3px 9px 5px 3px;
+    }
+    .button .btngold #icon-more {
+        font-size: 14px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 17px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 17px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: 14rem;
+    }
+    .carusel1 {
+        margin-top: 1rem;
+        margin-left: 7rem !important;
+        width: 36rem;
+    }
+    .down {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 28px 0 !important;
+        font-size: 2rem !important;
+        margin-left: 17rem;
+    }
+    #slider{
+        height:31vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 0px !important;
+        margin-left: 0rem !important;
+    }
+    
+    .about {
+        margin: 0rem;
+    }
+    .p-3{
+        width: 8rem;
+    }
+    .p-3 h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 12px;
+        width: 31rem;
+    }
+    .apple img {
+        margin-left: 7rem;
+        width: 394px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar {
+        margin-left: 42px;
+        margin-top: 0rem;
+        width: 53rem;
+    }
+    #courses {
+        padding-top: 5rem;
+    }
+    #courses .text-center{
+        font-size: 31px;
+        margin-top: 0rem;
+        margin-left: 12rem;
+    }
+    #cart {
+        margin-right: -13rem !important;
+        padding-top: 2rem !important;
+    }
+    .card1 {
+        width: 14rem;
+        margin-right: 4rem;
+        margin-left: 34px;
+    }
+    .salom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 12px;
+        position: absolute;
+        width: 95px;
+        height: 35px;
+        right: 20px;
+        top: 20.34px;
+        background: rgba(255, 255, 255, 0.22);
+        backdrop-filter: blur(15px);
+        border-radius: 100px;
+        width: 4rem;
+        height: 1.5rem;
+    }
+    .salom span{
+        font-size: 10px;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 174px !important;
+    }
+    .blog1 {
+        width: 226px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 13rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 34px;
+        margin-left: 17rem;
+    }
+    #blog11{
+        margin-right: -12rem !important;
+    padding-top: 2rem !important;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+    }
+    .nage1{
+        font-size: 21px;
+    }
+    .nage2{
+        font-size: 13px;
+    }
+    .rasm1 {
+        width: 372px;
+        height: 213px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .icone span i {
+        font-size: 20px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    #galereya.container{
+        width: 46rem !important;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 266px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 27px;
+        padding-top: 24px;
+        margin-left: 12rem;
+    }
+    .form-group{
+        margin-left: 0rem;
+    }
+    #contact .row{
+        margin-left: 3rem;
+    }
+    .single_contact{
+        height: 200px;
+        width: 325px
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 145px;
+        height: 38px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 304px;
+        height: 38px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 304px;
+        height: 90px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 7.6rem;
+        margin-top: 3rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: -41px;
+        padding: 0px 13px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 19px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 12px;
+        width: 252px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
+    }
+    .container{
+        margin-left: 0rem;
     }
     .change{
         background-color: #000000!important;
@@ -605,12 +951,9 @@ border-radius: 30px;
         margin: 0px;
         font-size: 1.5rem;
     }
-    /*HOME*/
+
     .home{
         height:46rem;
-    }
-    .col-md-6{
-        margin: 40% auto;
     }
     .titles p{
         font-size: 1.3rem;
@@ -620,14 +963,14 @@ border-radius: 30px;
     }
     .button {
         width: 100%;
-        margin: 3rem 1rem;
-        margin-left: 7rem;
+        margin: 2rem 1rem;
+        margin-left: 6rem;
     }
     .button a{
         padding: 1rem 1.5rem;
         font-size: 1rem;
     }    
-    /*Services*/
+
     .services > .container > h3{
         font-size: 1.5rem;
     }
@@ -644,7 +987,6 @@ border-radius: 30px;
         font-size: 0.9rem;
     }
 
-    /*Portfolio*/
 
     .portfolio .container h3{
         font-size: 1.5rem;
@@ -659,8 +1001,6 @@ border-radius: 30px;
     .overlay h4{
         font-size: 1.1rem;
     }
-
-    /*ABOUT*/
     .about .container h3{
         font-size: 1.5rem;
     }
@@ -689,42 +1029,368 @@ border-radius: 30px;
         font-size: 17px;
     }
 
-    /*FOOTER*/
+
     .copyright p{
         margin-bottom: 1rem;
     }
     .footer .col-md-4 .p{
         margin-top: 1rem;
     }
-}
+} */
 
-
-@media screen and (max-width: 767px){
+@media screen and (max-width: 830px){
     html, body{
         overflow-x: hidden;
     }
-
-    /*LOADING...*/
-    .dot{
-        margin-top: 8rem;
-        margin-right: -0.5rem;
-        width: 80px;
-        height: 80px;
-    }
-    .dot2{
-        width: 80px;
-        height: 80px;
-    }
     .navbar > button{
         border: none!important;
+    }
+    .p-3 {
+        width: -1rem;
     }
     .navbar > button:focus{
         box-shadow: none!important;
         outline: none!important;
     }
-    .navbar-brand{
+    .navbar .container-fluid .navbar-brand{
         padding: 0.5rem;
-        font-size: 1.7rem;
+        font-size: 18px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 13px;
+    }
+    .til{
+        margin-left: 167px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 40px;
+    }
+    .titles .maqsad-info {
+        color: #FFFFFF;
+        font-size: 27px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 33rem;
+        margin-left: 4rem;
+        text-align: center;
+        margin-left: -1rem;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 16px;
+        padding: 6px 12px 8px 11px;
+    }
+    .button .btngold #icon-more {
+        font-size: 14px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 19px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 19px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: 9rem;
+    }
+    .carusel1 {
+        margin-top: 1rem;
+        margin-left: 7rem !important;
+        width: 36rem;
+    }
+    .down {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 28px 0 !important;
+        font-size: 2rem !important;
+        margin-left: 6rem
+    }
+    #slider{
+        height:35vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 10px !important;
+        margin-left: 3rem !important;
+    }
+    
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 15px;
+        width: 37rem;
+    }
+    .apple img {
+        margin-left: 0rem;
+        width: 510px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar {
+        margin-left: 29px;
+        margin-top: 5rem;
+        width: 47rem;
+    }
+    #courses {
+        padding-top: 5rem;
+    }
+    #courses .text-center{
+        font-size: 31px;
+        margin-top: 0rem;
+        margin-left: 12rem;
+    }
+    #cart {
+        margin-right: -13rem !important;
+        padding-top: 2rem !important;
+    }
+    .card1 {
+        width: 19rem;
+        margin-right: 43px;
+        margin-left: 9px;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
+    }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 34px;
+        margin-left: 17rem;
+    }
+    #blog11{
+        margin-right: -12rem !important;
+    padding-top: 2rem !important;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+        margin-left: 4rem;
+    }
+    .nage1{
+        font-size: 32px;
+    }
+    .nage2{
+        font-size: 18px;
+        width: 37rem;
+    }
+    .rasm1 {
+        width: 571px;
+        height: 330px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 17px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+        width: 34rem;
+    }
+    .icone span i {
+        font-size: 31px;
+        color: #7723FE;
+        margin-left: 0rem;
+    }
+    #galereya.container{
+        width: 46rem !important;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 264px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 27px;
+        padding-top: 24px;
+        margin-left: 3rem;
+    }
+    .form-group{
+        margin-left: 0rem;
+    }
+    #contact .row{
+        margin-left: 3rem;
+    }
+    .single_contact{
+        height: 196px;
+        width: 310px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 150px;
+        height: 38px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 300px;
+        height: 38px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 300px;
+        height: 90px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 7.6rem;
+        margin-top: 3rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: 13px;
+        padding: 0px 16px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
+    }
+    .container{
+        margin-left: 0rem;
     }
     .change{
         background-color: #000000!important;
@@ -737,12 +1403,6 @@ border-radius: 30px;
         font-size: 1rem;
     }
     /*HOME*/
-    .home{
-        height:40rem;
-    }
-    .col-md-6{
-        margin: 40% auto;
-    }
     .titles p{
         font-size: 1.3rem;
     }
@@ -752,7 +1412,7 @@ border-radius: 30px;
     .button {
         width: 100%;
         margin: 3rem 1rem;
-        margin-left: 14rem;
+        margin-left: 6rem;
     }
     .button a{
         padding: 1rem 1.5rem;
@@ -829,32 +1489,771 @@ border-radius: 30px;
     }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 767px){
     html, body{
         overflow-x: hidden;
     }
-
-    /*LOADING...*/
-    .dot{
-        margin-top: 6rem;
-        margin-right: 6.5rem;
-        width: 50px;
-        height: 50px;
-    }
-    .dot2{
-        width: 50px;
-        height: 50px;
-    }
     .navbar > button{
         border: none!important;
+    }
+    .p-3 {
+        width: -1rem;
     }
     .navbar > button:focus{
         box-shadow: none!important;
         outline: none!important;
     }
-    .navbar-brand{
+    .navbar .container-fluid .navbar-brand{
         padding: 0.5rem;
-        font-size: 1.7rem;
+        font-size: 18px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 13px;
+    }
+    .til{
+        margin-left: 167px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 34px;
+    }
+    .titles .maqsad-info {
+        color: #FFFFFF;
+        font-size: 25px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 33rem;
+        margin-left: 4rem;
+        text-align: center;
+        margin-left: -1rem;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 16px;
+        padding: 3px 9px 5px 3px;
+    }
+    .button .btngold #icon-more {
+        font-size: 14px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 17px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 17px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: 8rem;
+    }
+    .carusel1 {
+        margin-top: 1rem;
+        margin-left: 7rem !important;
+        width: 36rem;
+    }
+    .down {
+        display: flex !important;
+        justify-content: center !important;
+        padding: 28px 0 !important;
+        font-size: 2rem !important;
+        margin-left: 17rem;
+    }
+    #slider{
+        height:35vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 10px !important;
+        margin-left: 3rem !important;
+    }
+    
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 15px;
+        width: 37rem;
+    }
+    .apple img {
+        margin-left: 0rem;
+        width: 397px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar {
+        margin-left: -95px;
+        margin-top: 0rem;
+        width: 37rem;
+    }
+    #courses {
+        padding-top: 5rem;
+    }
+    #courses .text-center{
+        font-size: 31px;
+        margin-top: 0rem;
+        margin-left: 12rem;
+    }
+    #cart {
+        margin-right: -13rem !important;
+        padding-top: 2rem !important;
+    }
+    .card1 {
+        width: 19rem;
+        margin-right: 1rem;
+        margin-left: 19px;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
+    }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 34px;
+        margin-left: 17rem;
+    }
+    #blog11{
+        margin-right: -12rem !important;
+    padding-top: 2rem !important;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+        margin-left: 13rem;
+    }
+    .nage1{
+        font-size: 32px;
+    }
+    .nage2{
+        font-size: 18px;
+    }
+    .rasm1 {
+        width: 438px;
+        height: 266px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 21px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 17px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .icone span i {
+        font-size: 31px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    #galereya.container{
+        width: 46rem !important;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 200px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 27px;
+        padding-top: 24px;
+        margin-left: 12rem;
+    }
+    .form-group{
+        margin-left: 0rem;
+    }
+    #contact .row{
+        margin-left: 3rem;
+    }
+    .single_contact{
+        height: 236px;
+        width: 242px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 264px;
+        height: 38px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 264px;
+        height: 38px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 264px;
+        height: 90px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 7.6rem;
+        margin-top: 3rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: 13px;
+        padding: 0px 16px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
+    }
+    .container{
+        margin-left: 0rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 14rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .titles p{
+        font-size: 1.3rem;
+    }
+    .titles h3{
+        font-size: 2.3rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 6rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 4rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 460px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .p-3 {
+        width: -1rem;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar .container-fluid .navbar-brand{
+        padding: 0.5rem;
+        font-size: 18px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 13px;
+    }
+    .til{
+        margin-left: 167px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 34px;
+    }
+    .titles .maqsad-info{
+        color: #FFFFFF;
+        font-size: 18px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 19rem;
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 14px;
+        padding: 3px 9px 5px 3px;
+    }
+    .button .btngold #icon-more {
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 15px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: -2rem;
+    }
+    .carusel1 {
+        margin-top: 1rem;
+        margin-left: 4rem;
+        width: 24rem;
+    }
+    #slider{
+        height:35vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 0px !important;
+    }
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 13px;
+    }
+    .apple img{
+        margin-left: -3rem;
+        width: 334px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar{
+        margin-left:0px;
+        margin-top: -13rem;
+    }
+    #courses{
+        padding-top:0rem;
+    }
+    #courses .text-center{
+        font-size:26px;
+        margin-top: -5rem; 
+    }
+    .card1 {
+        width: 23rem;
+        margin-right: 3rem;
+        margin-left: 3px;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
+    }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 26px;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+    }
+    .nage1{
+        font-size: 26px;
+    }
+    .nage2{
+        font-size: 13px;
+    }
+    .rasm1 {
+        width: 302px;
+        height: 190px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .icone span i {
+        font-size: 20px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 153px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 24px;
+    }
+    #contact .row{
+        margin-left: 0rem;
+    }
+    .single_contact{
+        height: 182px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 375px;
+        height: 38px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 375px;
+        height: 38px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 375px;
+        height: 90px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 7.6rem;
+        margin-top: 3rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: 13px;
+        padding: 0px 16px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
     }
     .change{
         background-color: #000000!important;
@@ -870,9 +2269,6 @@ border-radius: 30px;
     .home{
         height:36rem;
     }
-    .col-md-6{
-        margin: 50% auto;
-    }
     .titles p{
         font-size: 1rem;
     }
@@ -881,8 +2277,8 @@ border-radius: 30px;
     }
     .button {
         width: 100%;
-        margin: 3rem 1rem;
-        margin-left: 9rem;
+        margin: 2rem 1rem;
+        margin-left: 6rem;
     }
     .button a{
         padding: 1rem 1.5rem;
@@ -959,21 +2355,13 @@ border-radius: 30px;
     }
 }
 
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 420px){
     html, body{
         overflow-x: hidden;
     }
-
-    /*LOADING...*/
-    .dot{
-        margin-top: 6rem;
-        margin-right: 6.5rem;
-        width: 50px;
-        height: 50px;
-    }
-    .dot2{
-        width: 50px;
-        height: 50px;
+    .p-3 {
+        width: -1rem;
     }
     .navbar > button{
         border: none!important;
@@ -982,9 +2370,321 @@ border-radius: 30px;
         box-shadow: none!important;
         outline: none!important;
     }
-    .navbar-brand{
+    .navbar .container-fluid .navbar-brand{
         padding: 0.5rem;
-        font-size: 1.7rem;
+        font-size: 16px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 10px;
+    }
+    .til{
+        margin-left: 152px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+    .titles .maqsad-info{
+        color: #FFFFFF;
+        font-size: 15px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 16rem;
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 14px;
+        padding: 3px 9px 5px 3px;
+    }
+    .button .btngold #icon-more {
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 15px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: -2rem;
+    }
+    .carusel1 {
+        margin-top: 2rem;
+        margin-left: 2rem !important;
+        width: 20rem;
+    }
+    #slider{
+        height:32vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 0px !important;
+    }
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 12px;
+        width: 23rem
+    }
+    .apple img{
+        margin-left: -2rem;
+        width: 304px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar{
+        margin-left:0px;
+        margin-top: -13rem;
+        width: 24rem;
+    }
+    #courses{
+        padding-top:0rem;
+    }
+    #courses .text-center{
+        font-size:26px;
+        margin-top: -5rem; 
+        margin-left: 3rem;
+    }
+    .card1 {
+        width: 22rem;
+        margin-right: 3rem;
+        margin-left: 0rem;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
+    }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+        margin-left: -14rem;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 26px;
+        margin-left: -1rem;
+    }
+    #galereya.container {
+        width: 25rem !important;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+    }
+    .nage1{
+        font-size: 26px;
+    }
+    .nage2{
+        font-size: 13px;
+        width: 25rem;
+    }
+    .rasm1 {
+        width: 375px;
+        height: 231px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+        width: 20rem;
+    }
+    .icone span i {
+        font-size: 20px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 140px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 24px;
+        margin-left: -1rem;
+    }
+    #contact .row{
+        margin-left: 0rem;
+    }
+    .single_contact{
+        height: 182px;
+        width: 329px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 317px;
+        height: 30px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 317px;
+        height: 37px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 317px;
+        height: 80px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 7rem;
+        margin-top: 2rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: 13px;
+        padding: 0px 16px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
     }
     .change{
         background-color: #000000!important;
@@ -1000,9 +2700,6 @@ border-radius: 30px;
     .home{
         height:36rem;
     }
-    .col-md-6{
-        margin: 50% auto;
-    }
     .titles p{
         font-size: 1rem;
     }
@@ -1012,7 +2709,7 @@ border-radius: 30px;
     .button {
         width: 100%;
         margin: 3rem 1rem;
-        margin-left: 7.5rem;
+        margin-left: 5rem;
     }
     .button a{
         padding: 1rem 1.5rem;
@@ -1089,21 +2786,12 @@ border-radius: 30px;
     }
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 400px){
     html, body{
         overflow-x: hidden;
     }
-
-    /*LOADING...*/
-    .dot{
-        margin-top: 2rem;
-        margin-right: 8rem;
-        width: 50px;
-        height: 50px;
-    }
-    .dot2{
-        width: 50px;
-        height: 50px;
+    .p-3 {
+        width: -1rem !important;
     }
     .navbar > button{
         border: none!important;
@@ -1112,9 +2800,747 @@ border-radius: 30px;
         box-shadow: none!important;
         outline: none!important;
     }
-    .navbar-brand{
+    .navbar .container-fluid .navbar-brand{
         padding: 0.5rem;
-        font-size: 1.7rem;
+        font-size: 16px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 10px;
+    }
+    .til{
+        margin-left: 152px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+    .titles .maqsad-info{
+        color: #FFFFFF;
+        font-size: 15px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 16rem;
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 14px;
+        padding: 3px 9px 5px 3px;
+    }
+    .button .btngold #icon-more {
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 15px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: -2rem;
+    }
+    .carusel1 {
+        margin-top: 2rem;
+        margin-left: 2rem !important;
+        width: 20rem;
+    }
+    #slider{
+        height:32vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 0px !important;
+    }
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 12px;
+        width: 22rem;
+    }
+    .apple img{
+        margin-left: -2rem;
+        width: 304px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar{
+        margin-left:0px;
+        margin-top: -13rem;
+        width: 24rem;
+    }
+    #courses{
+        padding-top:0rem;
+    }
+    #courses .text-center{
+        font-size:26px;
+        margin-top: -5rem; 
+        margin-left: 3rem;
+    }
+    .card1 {
+        width: 22rem;
+        margin-right: 3rem;
+        margin-left: 0rem;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
+    }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+        margin-left: -14rem;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 26px;
+        margin-left: -1rem;
+    }
+    #galereya.container {
+        width: 25rem !important;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+    }
+    .nage1{
+        font-size: 26px;
+    }
+    .nage2{
+        font-size: 13px;
+    }
+    .rasm1 {
+        width: 302px;
+        height: 190px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .icone span i {
+        font-size: 20px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 140px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 24px;
+        margin-left: -1rem;
+    }
+    #contact .row{
+        margin-left: 0rem;
+    }
+    .single_contact{
+        height: 182px;
+        width: 329px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 317px;
+        height: 30px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 317px;
+        height: 37px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 317px;
+        height: 80px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 7rem;
+        margin-top: 2rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: 13px;
+        padding: 0px 16px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 8rem;
+    }   
+    .navbar-nav li{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    /*HOME*/
+    .home{
+        height:36rem;
+    }
+    .titles p{
+        font-size: 1rem;
+    }
+    .titles h3{
+        font-size: 2rem;
+    }
+    .button {
+        width: 100%;
+        margin: 3rem 1rem;
+        margin-left: 5rem;
+    }
+    .button a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }    
+    /*Services*/
+    .services > .container > h3{
+        font-size: 1.5rem;
+    }
+    .services > .container > i{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+    .card > .card-body > h3{
+        font-size: 1rem;
+    }
+    .card > .card-body > p{
+        font-size: 0.9rem;
+    }
+
+    /*Portfolio*/
+
+    .portfolio .container h3{
+        font-size: 1.5rem;
+    }
+    .portfolio .container p{
+        font-size: 0.9rem;
+    }
+    .card .card-header .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay h4{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+    .about .container h3{
+        font-size: 1.5rem;
+    }
+    .about .container p{
+        font-size: 0.9rem;
+    }
+    .about .container .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about .container .col-md-4:nth-child(2){
+        margin: 3rem 0;
+    }
+    .about .container .col-md-4:nth-child(2) .info h3{
+        font-size: 1.5rem;
+    }
+    .about .container .col-md-4:nth-child(2) .info p{
+        margin: 1rem 0 2rem;
+    }
+     .info .main li .secondSpan{ 
+        margin-top: 3px;
+    } 
+    .info .main li{
+        font-size: 14px;
+    }
+    .info .main li .firstSpan{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+    .copyright p{
+        margin-bottom: 1rem;
+    }
+    .footer .col-md-4 .p{
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .p-3 {
+        width: -1rem;
+    }
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar .container-fluid .navbar-brand{
+        padding: 0.5rem;
+        font-size: 16px;
+    }
+    .navbar-dark .navbar-toggler{
+        font-size: 10px;
+    }
+    .til{
+        margin-left: 142px;
+        box-shadow: none;
+    }
+    .maqsad {
+        margin-left: 7rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 30px;
+    }
+    .titles .maqsad-info{
+        color: #FFFFFF;
+        font-size: 15px;
+        opacity: 0.7;
+        margin-top: 12px;
+        width: 16rem;
+        margin-left: 4rem;
+        text-align: center;
+    }
+    .button .btngold{
+        padding: 0px 0px;
+        font-size: 14px;
+        padding: 3px 9px 5px 3px;
+    }
+    .button .btngold #icon-more {
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    .button .btn-contact {
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-left: 8px;
+    }
+    .button .btn-contact #icon-contact {
+        color: #F5B100;
+        font-size: 15px;
+        margin-right: 7px;
+    }
+    #maqsad2 {
+        margin-top: 4rem;
+        margin-left: -3rem;
+    }
+    .carusel1 {
+        margin-top: 2rem !important;
+        margin-left: 3rem !important;
+        width: 16rem;
+    }
+    #slider{
+        height:32vw !important;
+        position: relative;
+        perspective: 1000px;
+        transform-style:preserve-3d;
+    }
+    .carusel1 #next1{
+        color:#F9EC7D; 
+        font-size:19px;
+    }
+    #about{
+        margin: 0px !important;
+    }
+    .about {
+        margin: 0rem;
+    }
+    .p-3 h1{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .p-3 p{
+        font-size: 11px;
+        width: 20rem;
+    }
+    .apple img{
+        margin-left: -2rem;
+        width: 274px;
+    }
+    .m-5 {
+        margin: 0rem!important; 
+    }
+    .mt-5 {
+        margin: 0rem!important; 
+    }    
+    .hakorlar{
+        margin-left: 0px;
+        margin-top: -13rem;
+        width: 22rem;
+    }
+    #courses{
+        padding-top:0rem;
+    }
+    #courses .text-center{
+        font-size:26px;
+        margin-top: -5rem; 
+        margin-left: -1rem;
+    }
+    .card1 {
+        width: 20rem;
+        margin-right: 3rem;
+        margin-left: 0rem;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
+    }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-left: -13rem;
+    }
+    .card1 .card-body h5{
+        font-size: 1rem;
+    }
+    .card > .card-body > p {
+        width: 17rem;
+        font-size: 0.9rem;
+    }
+    .narx8{
+    font-size: 13px;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 0rem;
+    }
+    .sotib{
+        margin-left: -2rem;
+    }
+    .main_btn {
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FFFFFF;
+    width: 88px;
+    height: 33px;
+    font-size: 13px;
+}
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        width: 14px;
+    }
+    #blogs{
+        padding-top:0rem;
+    }
+    #blogs .text-center{
+        font-size: 26px;
+        margin-left: -1rem;
+    }
+    #galereya.container {
+        width: 23rem !important;
+    }
+    .col-md-6 {
+        margin: 1% auto;
+    }
+    .nage1{
+        font-size: 26px;
+    }
+    .nage2{
+        font-size: 13px;
+    }
+    .rasm1 {
+        width: 302px;
+        height: 190px;
+        left: 80px;
+        top: 3773px;
+        box-shadow: 0px 10px 25px rgb(11 170 175);
+        border-radius: 30px;
+    }
+    #lorem{
+        margin-top:0rem; 
+    }
+    .col-9 h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .col-9 p{
+        font-size: 11px;
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .icone span i {
+        font-size: 20px;
+        color: #7723FE;
+        margin-left: 1rem;
+    }
+    .gal{
+        font-size: 26px;
+    }
+    .col-7 img{
+        height: 110px;
+    }
+    #boglanish{
+        font-weight: bold;
+        font-size: 25px;
+        padding-top: 24px;
+        margin-left: 1rem;
+    }
+    #contact .row{
+        margin-left: 0rem;
+    }
+    .single_contact{
+        height: 182px;
+        width: 280px;
+    }
+
+    .single_contact h3{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    .sing_contact_iteam li{
+        list-style: none;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    #frm{
+        height: 195px;
+        margin-top: 6px
+    }
+    .form1 {
+        width: 269px;
+        height: 30px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    #phone{
+        margin-left: 0px !important;
+    }
+    .form-group{
+        margin-top: 6px;
+    }
+    .form2 {
+        width: 268px;
+        height: 37px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .form3 {
+        width: 269px;
+        height: 80px;
+        margin: 0px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgb(0 0 0 / 5%);
+        border-radius: 10px;
+    }
+    .yuborish{
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .main_btn{
+        margin-bottom: 2rem;
+        margin-left: 13px;
+        padding: 0px 16px 0px 0px;
+    }
+    .container-fluid h1{
+        font-weight: 800; 
+        font-size: 15px; 
+        color: #fff;
+    }
+    .container-fluid .col-md-4 p{
+        color: #fff;
+        opacity: 0.5;
+        font-size: 10px;
+        width: 300px;
+    }
+    .col-md-8 .row {
+        margin-left:0rem;
+    }
+    .col-md-8 .row .col-4{
+        margin-right: 0rem;
+    }
+    .col-md-8 .row .footer-p{
+        color:#F9EC7D; 
+        font-size: 14px;
+    }
+    #partners{
+        font-size: 12px;
+        border: none;
+        background: transparent;
+        color: #FFFFFF;
+        margin-top: -1rem;
+        width: 103px;
+    }
+    .col-md-8 .row .col-4 a .footer-p{
+        margin-bottom: 2px;
+    }
+    .ter{
+        margin-left: 1rem;
+        font-size: 12px;
+    }
+    #nav_footer{
+        margin-top: 2rem !important;
+    }
+    .contact_form{
+        margin-left: 0px;
     }
     .change{
         background-color: #000000!important;
@@ -1130,9 +3556,6 @@ border-radius: 30px;
     .home{
         height: 36rem;
     }
-    .col-md-6{
-        margin: 50% auto;
-    }
     .titles p{
         font-size: 1rem;
     }
@@ -1141,7 +3564,7 @@ border-radius: 30px;
     }
     .button {
         width: 100%;
-        margin: 3rem 1rem;
+        margin: 1rem 1rem;
         margin-left: 7rem;
     }
     .button a{
@@ -1223,6 +3646,9 @@ border-radius: 30px;
     html, body{
         overflow-x: hidden;
     }
+    .p-3 {
+        width: -1rem;
+    }
     .navbar > button{
         border: none!important;
     }
@@ -1283,13 +3709,16 @@ border-radius: 30px;
         margin-left: -3rem;
     }
     .carusel1 {
-        margin-top: 1rem;
-        margin-left: 3rem;
+        margin-top: 1rem !important;
+        margin-left: 2rem !important;
         width: 15rem;
     }
     .carusel1 #next1{
         color:#F9EC7D; 
         font-size:19px;
+    }
+    #galereya.container {
+        width: 20rem !important;
     }
     #about{
         margin: 0px !important;
@@ -1303,6 +3732,7 @@ border-radius: 30px;
     }
     .p-3 p{
         font-size: 11px;
+        width: 17rem;
     }
     .apple img{
         margin-left: -3rem;
@@ -1329,12 +3759,23 @@ border-radius: 30px;
         width: 18.5rem;
         margin-right: 1rem;
     }
+    .blog1 {
+        width: 307px !important;
+        height: 154px;
+        background: #F7F7F7;
+    }
     .card1 .card-body h5{
         font-size: 1rem;
     }
     .card > .card-body > p {
         width: 17rem;
         font-size: 0.9rem;
+    }
+    .link {
+        color: #2b029b;
+        margin-top: -78px;
+        padding: 0px;
+        margin-left: 249px !important;
     }
     .narx8{
     font-size: 13px;
@@ -1354,11 +3795,16 @@ border-radius: 30px;
     width: 88px;
     height: 33px;
     font-size: 10px;
+    padding-right: 23px;
 }
     .owl-theme .owl-dots .owl-dot {
         display: inline-block;
         zoom: 1;
         width: 14px;
+    }
+    .icone {
+        margin-top: 1.5rem;
+        width: 22%;
     }
     #blogs{
         padding-top:0rem;
@@ -1442,7 +3888,7 @@ border-radius: 30px;
         border-radius: 10px;
     }
     #phone{
-        margin-left: 0px;
+        margin-left: 0px !important;
     }
     .form-group{
         margin-top: 6px;
@@ -1510,6 +3956,9 @@ border-radius: 30px;
     }
     #nav_footer{
         margin-top: 2rem;
+    }
+    .contact_form{
+        margin-left: 0px;
     }
     .change{
         background-color: #000000!important;

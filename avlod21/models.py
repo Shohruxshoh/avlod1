@@ -17,8 +17,8 @@ class Team(models.Model):
 
 class Courses(models.Model):
     name = models.CharField(max_length=50, null=True, blank=True)
-    number_les = models.IntegerField()
-    davomiyligi = models.CharField()
+    number_les = models.CharField(max_length=10)
+    davomiyligi = models.CharField(max_length=20)
     price = models.CharField(max_length=50, null=True, blank=True)
     image_cours = models.FileField()
     description = models.TextField()
