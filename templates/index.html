@@ -1,11 +1,16 @@
 {% load static %}
+
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
+  <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Avlod21</title>
+        <title>{% trans "Avlod21" %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -40,17 +45,18 @@
     box-shadow: 5px 5px 15px rgba(190, 182, 65, 0.959); 
   }
   .link{
-    color: #2b029b;
+    color: black;
     margin-top: -78px;
     padding: 0px;
     margin-left: 316px;
+    font-weight: 500;
   }
   .rasmg{
     box-shadow: 5px 5px 25px grey;
     border-radius: 31px;
   }
   .item1{
-    height:700px !important;
+    height:850px !important;
   }
   #oy{
     margin-top: -33px;
@@ -63,14 +69,14 @@
   }
   #slider input{
     width:0px;
-}
-#slider{
+  }
+  #slider{
     height:22vw;
     position: relative;
     perspective: 1000px;
     transform-style:preserve-3d;
-}
-#slider label{
+  }
+  #slider label{
     margin: auto;
     width:70%;
     height:100%;
@@ -80,56 +86,71 @@
     right:0;
     cursor:pointer;
     transition: transform 0.4s ease;
-}
-#s1:checked ~ #slider2, #s2:checked ~ #slider3,
-#s3:checked ~ #slider1{
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0.2);
-  transform: translate3d(-15%, 0, -100px)
-}
-#s1:checked ~ #slider3, #s2:checked ~ #slider1,
-#s3:checked ~ #slider2{
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%, 0, -200px)
-}
-#s1:checked ~ #slider1, #s2:checked ~ #slider2,
-#s3:checked ~ #slider2{
+  }
+  #s1:checked ~ #slider2, #s2:checked ~ #slider3,
+  #s3:checked ~ #slider1{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0.2);
+    transform: translate3d(-15%, 0, -100px)
+  }
+  #s1:checked ~ #slider3, #s2:checked ~ #slider1,
+  #s3:checked ~ #slider2{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%, 0, -200px)
+  }
+  #s1:checked ~ #slider1, #s2:checked ~ #slider2,
+  #s3:checked ~ #slider2{
     box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
     transform: translate3d(1, 0, 0)
-}
-
+  }
+  .yuduz{
+    position: absolute;
+    width: 66.1px;
+    height: 47.79px;
+    left: 21.72px;
+    top: 22.09px;
+  }
 </style>
 
-      </head>
+  </head>
     <body>
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/">Avlod21</a>
+              <a class="navbar-brand" href="/">{% trans "Avlod21" %}</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" style='color:#FFFFFF;' aria-current="page" href="#about">About</a>
+                    <a class="nav-link active" style='color:#FFFFFF;' aria-current="page" href="#about">{% trans "About" %}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#courses">Courses</a>
+                    <a class="nav-link" href="#courses">{% trans "Courses" %}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#blogs">Blogs</a>
+                    <a class="nav-link" href="#blogs">{% trans "Blogs" %}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#galereya">Galereya</a>
+                    <a class="nav-link" href="#galereya">{% trans "Galereya" %}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact">{% trans "Contact" %}</a>
                   </li>
                 </ul>
-                <select class="form-select form-select-sm til" style='border:none; box-shadow: none;' aria-label=".form-select-sm example">
-                  
-                  <option value="1" style='background: black; color: #fff; font-size: 18px;'>Uzbek</option>
-                  <option value="2" style='background: black; color: #fff; font-size: 18px;'>Rus</option>
-                </select>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" style='border:none;  box-shadow: none; background: #0C111F; ; color: #fff; font-size: 15px;' type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    {% trans "Til"%}
+                  </button>
+                  <ul class="dropdown-menu" style='background: #0C111F;' aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" style='background: #0C111F; color: #fff; font-size: 15px;' href="/uz/">o`zbek</a></li>
+                    <li ><a class="dropdown-item" style='background: #0C111F; color: #fff; font-size: 15px;' href="/ru/">русский</a></li>
+                  </ul>
+                </div>
+                {% comment %} <select class="form-select form-select-sm til" style='border:none; box-shadow: none;' aria-label=".form-select-sm example">
+                
+                  <option value="1" style='background: black; color: #fff; font-size: 18px;'><a href="#">Uzbek</a></option>
+                  <a href=""><option value="2" style='background: black; color: #fff; font-size: 18px;'>Rus</option></a>
+                </select>  {% endcomment %}
               </div>
             </div>
         </nav>
@@ -138,12 +159,11 @@
               <div class="row mt-5">
                   <div id='maqsad2' class="col-md-6" style=''>
                       <div class="titles" >
-                          <h1  class='maqsad' style=''>Maqsadimiz</h1>
-                          <h3 class="maqsad-info" style=''>O‘zbekistonda inqirozga uchrayotgan korxonalar tizimini
-                            qurgan holda inqirozdan qutulishga sababchi bo‘lish</h3>
+                          <h1  class='maqsad' style=''>{% trans "Maqsadimiz" %}</h1>
+                          <h3 class="maqsad-info" style=''>{% trans "O‘zbekistonda inqirozga uchrayotgan korxonalar tizimini qurgan holda inqirozdan qutulishga sababchi bo‘lish" %} </h3>
                           <div class="button" style=''>
-                              <a  class='btn btngold' style='' href="#about">Read more  <i id="icon-more" style='' class="bi bi-arrow-right-circle-fill"></i></a>
-                              <a class='btn btn-contact' style='' href='#contact'><i id='icon-contact' style='' class="bi bi-play-circle"></i>Contact Us</a>
+                              <a  class='btn btngold' style='' href="#about">{% trans "Read more" %}  <i id="icon-more" style='' class="bi bi-arrow-right-circle-fill"></i></a>
+                              <a class='btn btn-contact' style='' href='#contact'><i id='icon-contact' style='' class="bi bi-play-circle"></i>{% trans "Contact Us" %}</a>
                           </div>
                       </div>
                   </div>
@@ -156,14 +176,23 @@
                             <input type='radio' name='slider' id="s2" checked>
                             <input type='radio' name='slider' id="s3">
                             <label for="s1" id='slider1'>
-                                <img class="img10" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" height="100%" width='100%'>
-                            </label>
+                              <div>
+                                <img class="img10" style="border-radius:30px 30px 30px 30px;" src="{% static 'image/1434.png' %}" height="100%" width='100%'>
+                                <img class='yuduz' src="{% static 'image/4001.png' %}">
+                              </div>
+                              </label>
                             <label for="s2" id='slider2'>
-                                <img class="img10" src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&w=1000&q=80" height="100%" width='100%'>
-                            </label>
+                              <div>
+                                <img class="img10" style="border-radius:30px 30px 30px 30px;" src="{% static 'image/uns.png' %}" height="100%" width='100%'>
+                                <img class='yuduz' src="{% static 'image/4001.png' %}">
+                              </div>
+                              </label>
                             <label for="s3" id='slider3'>
-                                <img class="img10" src="https://thumbs.dreamstime.com/b/d-image-abstract-tunnel-diagonal-black-white-stripes-optical-illusion-168695979.jpg" height="100%" width='100%'>
-                            </label>
+                              <div>
+                                <img class="img10" style="border-radius:30px 30px 30px 30px;" src="{% static 'image/unspla.png' %}" height="100%" width='100%'>
+                                <img class='yuduz' src="{% static 'image/4001.png' %}">
+                              </div>
+                              </label>
                         </section>
                       </div>
                       </div>
@@ -181,13 +210,13 @@
             <div class="row justify-content-center about" style="" >
               <div class="col">
                <div class="p-3">
-                <h1>Biz haqimizda</h1>   
-                <p> Oʻquv markazimizning maqsadlari va oʻziga xos qadriyatlari mavjud. Oʻzbekistonda inqirozga uchraryotgan korxonalarni tashkil qilgan holda inqirozdan qutulishga sababchi boʻlish. Yoshlarga kelajakda oʻz ishini mutaxasisi boʻlishni istagan, bizneslarda yoki shaxsiy biznesda rahbar lavozimida boʻlishni istagan yoshlarga,marketing, moliya, sotuv va boshqaruv bilimlarini berib boramiz va Oʻzbekiston ahliga yordam berish uchun tayyorlaymiz. Shunda ular oʻzlariga ham va oilalariga ham yordam berishadi.
-                <br>Bizning qadriyatlarimiz:<br>
-                1. Halollik<br>
-                2. Adolat<br>
-                3. Mardlik<br>
-                4. Natija
+                <h1>{% trans "Biz haqimizda" %}</h1>   
+                <p> {% trans "Oʻquv markazimizning maqsadlari va oʻziga xos qadriyatlari mavjud. Oʻzbekistonda inqirozga uchraryotgan korxonalarni tashkil qilgan holda inqirozdan qutulishga sababchi boʻlish. Yoshlarga kelajakda oʻz ishini mutaxasisi boʻlishni istagan, bizneslarda yoki shaxsiy biznesda rahbar lavozimida boʻlishni istagan yoshlarga,marketing, moliya, sotuv va boshqaruv bilimlarini berib boramiz va Oʻzbekiston ahliga yordam berish uchun tayyorlaymiz. Shunda ular oʻzlariga ham va oilalariga ham yordam berishadi." %}
+                <br>{% trans "Bizning qadriyatlarimiz:" %}<br>
+                1. {% trans "Halollik" %}<br>
+                2. {% trans "Adolat" %}<br>
+                3. {% trans "Mardlik" %}<br>
+                4. {% trans "Natija" %}
                 </p>
               </div>
               </div>
@@ -208,73 +237,32 @@
 
 
       <div id='courses' class='container mt-5' style=''>
-        <h1 class='text-center' style=''>Bizning kurslar</h1>
+        <h1 class='text-center' style=''>{% trans "Bizning kurslar" %}</h1>
         <div id='cart' class="row" style='margin-right:-3rem; padding-top: 2rem;'>
           <div id="owl-demo" class="owl-carousel owl-theme">
+            {% for cours in courses %}
             <div class="item" style=""> 
               <div class='col-4'>
                 <div class="card card1" >
                   <div>
-                    <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
-                    <p class='salom'><span style='margin-top:-2px;'>8 ta dars</span></p>  
+                    <img  src="{{cours.image_cours.url}}" class="card-img-top" alt="...">
+                    <p class='salom'><span style='margin-top:-2px; font-size: 15px;'>{{cours.number_les}} {% trans "ta dars" %}</span></p>  
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Notiqlik kursi 8 ta darsdan iborat boʻlib, bu kursimizda ommani oʻziga jalb etish va ommaga oʻz fikrini toʻliq yetkaza olish qobiliyatini shakllantirish oʻrgatiladi. Bu darsimiz nazariy va amaliy qismdan iborat. Nazariy qismda siz, biznes bilimlarini oʻrganasiz. Amaliy qismda esa, ishlab turgan bizneslarda ishlab malakangizni oshirasiz. Darslarimiz vazifalarga ajratilgan boʻladi. Bir vazifani bajarsangiz ikkinchisiga oʻtasiz. 
-                      Nazariy va amaliy vazifalarni muvaffaqiyatli yakunlaganingizdan soʻng Avlod21 bines akademiyasi tomonidan sertifikat beriladi.</p><a href="javasicript:void()" class='btn link'>yana</a>
+                    <h5 class="card-title">{{cours.name}}</h5>
+                    <p class="card-text">{{cours.description}}</p><a href="javasicript:void()"  class='btn link'>{% trans "yana" %}</a>
                     <div class='row'>
                       <div id='oy' class='col-6'>
-                        <p class='narx8'>Davomiyligi: 3 oy</p>
-                        <p class='narx8'><b>3000000</b> so`m</p>
+                        <p class='narx8'>{% trans "Davomiyligi" %}: <b>{{cours.davomiyligi}}</b></p>
+                        <p class='narx8'><b>{{cours.price}}</b> {% trans "so`m" %}</p>
                       </div>
-                      <div id='oy' class='col-6 sotib' ><a  style="" href="#contact" class="btn main_btn">sotib olish</a></div>
+                      <div id='oy' class='col-6 sotib' ><a href="#contact" class="btn main_btn" >{% trans "sotib olish" %}</a></div>
                     </div>
                   </div>
                 </div>
               </div>
            </div> 
-           <div class="item"> 
-            <div class='col-4'>
-              <div class="card card1" style="">
-                <div>
-                  <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
-                  <p class='salom'><span style='margin-top:-2px;'>8 ta dars</span></p>  
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <div> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div>
-                  <div class='row'>
-                    <div class='col-6'>
-                      <p class='narx8'>Davomiyligi: 5 oy</p>
-                      <p class='narx8'><b>3000000</b> so`m</p>
-                    </div>
-                    <div class='col-6'><a style="font-size:14px" href="#contact" class="btn main_btn">sotib olish</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-         <div class="item"> 
-          <div class='col-4'>
-            <div class="card card1" style="">
-              <div>
-                <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
-                <p class='salom'><span style='margin-top:-2px;'>8 ta dars</span></p>  
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some Some quick example text to build Lorem lorem lhbkjbgkugggggggbbbbbbbbbbbkSome quick example text to build Lorem lorem lhbkjbgkugggggggbbbbbbbbbbbk quick example text to build on the card title and make up the bulk of the card's content.</p><a href="javasicript:void()" class='link'>yana</a>
-                <div class='row'>
-                  <div class='col-6'>
-                    <p class='narx8'>Davomiyligi: 4 oy</p>
-                    <p class='narx8'><b>3000000</b> so`m</p>
-                  </div>
-                  <div class='col-6'><a style="font-size:14px" href="#contact" class="btn main_btn">sotib olish</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-         </div> 
+           {% endfor %} 
         </div>
       </div>
     </div>
@@ -283,42 +271,22 @@
 
 
       <div id='blogs' class='container mt-5' style=''>
-        <h1 class='text-center' style=' '>Bizning blog</h1>
+        <h1 class='text-center' style=' '>{% trans "Bizning blog" %}</h1>
         <div id="blog11" class='row' style='margin-right:-3rem; padding-top: 2rem;'>
           <div class="owl-carousel owl-theme">
+            {% for post in posts %}
           <div class="item" style='height: 26rem; '>
           <div class='col-4'>
             <div class="card card1" style=" background: #F7F7F7;">
-              <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
+              <img  src="{{post.file.url}}" class="card-img-top" alt="...">
               <div class="card-body blog1" >
-                <h5 class="card-title">O‘quv markazni tizimlash</h5>
-                <p class="hello">Ishtirokchilar o‘zlari uchun ajoyib ma’lumotlar olishdi. O‘quv markazni tizimlashtirish kursining 11-bosqichiga start berildi.</p>
+                <h5 class="card-title">{{post.title}}</h5>
+                <p class="hello">{{post.description}}</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="item" style='height: 26rem; '>
-          <div class='col-4'>
-            <div class="card card1" style="">
-              <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
-              <div class="card-body" >
-                <h5 class="card-title">O‘quv markazni tizimlash</h5>
-                <p class="card-text">Ishtirokchilar o‘zlari uchun ajoyib ma’lumotlar olishdi. O‘quv markazni tizimlashtirish kursining 11-bosqichiga start berildi.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item" style='height: 26rem; '>
-          <div class='col-4'>
-            <div class="card card1" style="">
-              <img  src="https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg" class="card-img-top" alt="...">
-              <div class="card-body" >
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
         </div>
       </div>
     </div>
@@ -327,14 +295,14 @@
         <div  class='container mt-5'>
           <div class='row justify-content-center'>
             <div class='col-md-6'>
-              <h1 class='nage1' style=""> Nega aynan Avlod21</h1>
-              <p class='nage2' style="">O'z korxonangizda tizimli ishni yo'lga qo'yishni aynan biz bilan o'rganing. </p>
+              <h1 class='nage1' style="">{% trans "Nega aynan Avlod21" %} </h1>
+              <p class='nage2' style="">{% trans "O'z korxonangizda tizimli ishni yo'lga qo'yishni aynan biz bilan o'rganing." %} </p>
               <img class="rasm1" src="{% static 'image/Rect.png' %}">
             </div>
             <div class='col-md-6' style='margin-top:3rem'>
-              <div class='row' style='margin-top:1rem;'><div class="col-3 icone" ><span><i style='' class="bi bi-wallet-fill"></i></span></div> <div class="col-9"><h1 style=''>Tengsiz mutaxassis</h1><p >Marketing Boshqaruv Sotuv va Moliya bo'yicha mutaxassis bo'lasiz.</p></div>
-              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style=''  class="bi bi-people-fill"></i></span></div> <div class="col-9" style='margin-left:5px;'><h1 style=''>Kuchli va ahil jamoa</h1><p >Siz taktik va strategik fikrlay oladigan, mustaqil va sifatli ishlay oladigan, ahil va jonkuyar jamoada bo'lasiz </p></div>
-              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style='' class="bi bi-heart-fill"></i></span></div> <div class="col-9" style='margin-left:8px;'><h1 style=''>Moliyaviy erkinlik</h1><p >Kuchli mutaxassislar katta loyihalarni yuritadi, katta loyihalar yaxshi daromad olib keladi, yaxshi daromadga siz ham ega bo'ling.</p></div>
+              <div class='row' style='margin-top:1rem;'><div class="col-3 icone" ><span><i style='' class="bi bi-wallet-fill"></i></span></div> <div class="col-9"><h1 style=''>{% trans "Tengsiz mutaxassis" %}</h1><p>{% trans "Marketing Boshqaruv Sotuv va Moliya bo'yicha mutaxassis bo'lasiz." %}</p></div>
+              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style=''  class="bi bi-people-fill"></i></span></div> <div class="col-9" style='margin-left:5px;'><h1 style=''>{% trans "Kuchli va ahil jamoa" %}</h1><p >{% trans "Siz taktik va strategik fikrlay oladigan, mustaqil va sifatli ishlay oladigan, ahil va jonkuyar jamoada bo'lasiz." %} </p></div>
+              <div class='row' id='lorem' style=''><div class="col-3 icone" ><span><i style='' class="bi bi-heart-fill"></i></span></div> <div class="col-9" style='margin-left:8px;'><h1 style=''>{% trans "Moliyaviy erkinlik" %}</h1><p >{% trans "Kuchli mutaxassislar katta loyihalarni yuritadi, katta loyihalar yaxshi daromad olib keladi, yaxshi daromadga siz ham ega bo'ling." %}</p></div>
             </div>    
           </div>
         </div>
@@ -345,7 +313,7 @@
         <!-- Galeriya -->
         <div id='galereya' class='container mt-5'>
           <div class='row'>
-            <h1 class='gal' style="">Galereya</h1>
+            <h1 class='gal' style="">{% trans "Galereya" %}</h1>
             <div class='col-7'>
               <img width="100%" class='rasmg' style='' src='{% static "image/rasm1.png" %}'>
             </div>
@@ -360,13 +328,13 @@
         </div>
         <!--Contact-->
         <div id='contact' class='container mt-5' >
-          <h1 id="boglanish" class='text-center' style=''>Biz bilan bog‘lanish</h1>
+          <h1 id="boglanish" class='text-center' style=''>{% trans "Biz bilan bog‘lanish" %}</h1>
             <div class="row justify-content-center" style="">
 							<div class="col-md-5 col-sm-5 col-xs-12">
 								<div class="single_contact">
-									<h3 style=''>Bosh Idora</h3>
+									<h3 style=''>{% trans "Bosh Idora" %}</h3>
 									<ul class="sing_contact_iteam">
-										<li style=''><i class="bi bi-geo-alt-fill" style='margin-right: 5px;'></i>  Toshkent, Beruniy m, Mashhura o‘quv markazi, 3-qavat</li>
+										<li style=''><i class="bi bi-geo-alt-fill" style='margin-right: 5px;'></i>  {% trans "Toshkent, Beruniy m, Mashhura o‘quv markazi, 3-qavat" %}</li>
 										<li style=''><i class="bi bi-telephone-fill" style='margin-right: 5px;'></i>  +998 55 500 21 00</li>			
 										<li style=''><i class="bi bi-envelope-fill" style='margin-right: 5px;'></i>  Avlod21ba@mail.ru</li>
 									</ul>
@@ -379,30 +347,30 @@
 										<div id='frm' class="row" style=''>
 											<div class="form-group col-md-6">
 												<div class="contact_form " >
-													<input type="text" name="name" class='form1' placeholder="Ism" required="required">
+													<input type="text" name="name" class='form1' placeholder="{% trans "&nbsp Ism" %}" required="required">
 												</div>
 											</div>
 											
 											<div class="form-group col-md-6">
 												<div class="contact_form">
-													<input type="text" name="phone" id='phone'  class="form1" placeholder="Telefon" required="required" style='margin-left:30px;'>
+													<input type="text" name="phone" id='phone'  class="form1" placeholder="{% trans "&nbsp Telefon" %}" required="required" style='margin-left:30px;'>
 												</div>
 											</div>
 											
 											<div class="form-group col-md-12">
 												<div class="contact_form">
-													<input type="email" name="email" class="form2" placeholder="Email" style=' ' >
+													<input type="email" name="email" class="form2" placeholder="{% trans "&nbsp Email" %}" style=' ' >
 												</div>
 											</div>
 										
 											<div class="form-group col-md-12">
 												<div class="contact_form">
-													<textarea rows="6" name="message" class="form3" placeholder="Xabar" required="required" ></textarea>
+													<textarea rows="6" name="message" class="form3" placeholder="{% trans "&nbsp Xabar" %}" required="required" ></textarea>
 												</div>
 											</div>
 										</div>
                     <div class="contact_form_btn text-center yuborish" style=''>
-                      <button type="submit" value="xabar yuborish" id="submitButton" class="main_btn" title="Submit Your Message!">Yuborish</button>
+                      <button type="submit" value="xabar yuborish" id="submitButton" class="main_btn" title="Submit Your Message!">{% trans "Yuborish" %}</button>
                     </div>
 									</form>
 								</div>
@@ -420,36 +388,35 @@
           <div class="container-fluid m-5">
             <div class='row'>
               <div class='col-md-4'>
-                <h1 style=''>Avlod21</h1>
-                <p style=''>Hech narsa o‘z-o‘zidan, harakat va irodasiz, qurbon va mehnatsiz yuzaga chiqmaydi.
-                  Muvaffaqiyatning 97% qismi bu - MATONAT </p>
+                <h1 style=''>{% trans "Avlod21" %}</h1>
+                <p style=''>{% trans "Hech narsa o‘z-o‘zidan, harakat va irodasiz, qurbon va mehnatsiz yuzaga chiqmaydi. Muvaffaqiyatning 97% qismi bu - MATONAT" %} </p>
                 <p class='mt-5' style=''>By West Coast Agency - Copyright © 2022</p>
               </div>
               <div class='col-md-8'>
                 <div class='row' style=''>
                   <div  class='col-4'>
                     <a href="#" class="list-group-item list-group-item-action" aria-current="true" style='border:none; background: transparent; color: #FFFFFF;'>
-                    <p class='footer-p' style=''> Home</p>
+                    <p class='footer-p' style=''>{% trans "Home" %} </p>
                     </a>
-                    <a id='partners' href="#about" class="list-group-item list-group-item-action" style=''>About Us</a>
-                    <a id='partners' href="#" class="list-group-item list-group-item-action" style=''>Partners</a>
-                    <a id='partners' href="#courses" class="list-group-item list-group-item-action" style=''>Courses</a>
+                    <a id='partners' href="#about" class="list-group-item list-group-item-action" style=''>{% trans "About Us" %}</a>
+                    <a id='partners' href="#" class="list-group-item list-group-item-action" style=''>{% trans "Partners" %}</a>
+                    <a id='partners' href="#courses" class="list-group-item list-group-item-action" style=''>{% trans "Courses" %}</a>
                   </div>
                   <div class='col-4'>
                     <a href="#" class="list-group-item list-group-item-action" aria-current="true" style='border:none; background: transparent; color: #FFFFFF;'>
-                      <p class='footer-p'  style=' '> Our Blog</p>
+                      <p class='footer-p'  style=' '>{% trans "Our Blog" %} </p>
                     </a>
-                    <a id='partners' href="#galereya" class="list-group-item list-group-item-action" style=''>Gallery</a>
-                    <a id='partners' href="#blogs" class="list-group-item list-group-item-action" style=''>Events</a>
-                    <a id='partners' href="#blogs" class="list-group-item list-group-item-action" style=''>Videos</a>
+                    <a id='partners' href="#galereya" class="list-group-item list-group-item-action" style=''>{% trans " Gallery" %}</a>
+                    <a id='partners' href="#blogs" class="list-group-item list-group-item-action" style=''>{% trans " Events" %}</a>
+                    <a id='partners' href="#blogs" class="list-group-item list-group-item-action" style=''>{% trans " Videos" %}</a>
                   </div>
                   <div class='col-4'>
                     <a href="#" class="list-group-item list-group-item-action" aria-current="true" style='border:none; background: transparent; color: #FFFFFF;'>
-                      <p class='footer-p' style=''>Follow Us</p>
+                      <p class='footer-p' style=''>{% trans "Follow Us" %}</p>
                     </a>
-                    <a id='partners' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Favlod21%2F%3Ffbclid%3DIwAR378pOprz1QcwtlISPUWn52lrQVnmcRf9NZxA62uL1hqOzjBYAxEeNv-QU&h=AT1eQNkI8yuh7cFOc0_zaQCEMOoa5ul1W_fiaZPaKto111FaYs2XiZFR9FrtcdQM3KvVz_SVk1hiT1hYvBi94tAW0IHPymBuD8lpNcLrylYBVGKZgMXCqp37ifwUXkqm2tOjpw" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-facebook"></i> Facebook</a>
-                    <a id='partners' href="https://t.me/avlod21" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-telegram"></i> Telegram</a>
-                    <a id='partners' href="https://www.instagram.com/avlod21/" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-instagram"></i> Instagram</a>
+                    <a id='partners' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Favlod21%2F%3Ffbclid%3DIwAR378pOprz1QcwtlISPUWn52lrQVnmcRf9NZxA62uL1hqOzjBYAxEeNv-QU&h=AT1eQNkI8yuh7cFOc0_zaQCEMOoa5ul1W_fiaZPaKto111FaYs2XiZFR9FrtcdQM3KvVz_SVk1hiT1hYvBi94tAW0IHPymBuD8lpNcLrylYBVGKZgMXCqp37ifwUXkqm2tOjpw" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-facebook"></i>{% trans " Facebook" %}</a>
+                    <a id='partners' href="https://t.me/avlod21" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-telegram"></i> {% trans " Telegram" %}</a>
+                    <a id='partners' href="https://www.instagram.com/avlod21/" class="list-group-item list-group-item-action" style='border:none; background: transparent; color: #FFFFFF;'><i class="bi bi-instagram"></i>{% trans "  Instagram" %}</a>
                   </div>
                 </div>
                 
@@ -463,6 +430,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
   <script>
       $(".link").on('click', function(){
         $(this).parent().toggleClass("showContent");
@@ -475,6 +443,9 @@
         var replaceText = $(this).parent().hasClass("showContent") ? "kamroq" : "yana";
         $(this).text(replaceText);
       });
+      $(function(){
+        $('.selectpicker').selectpicker();
+    });
     </script>
     <script>
        $('.owl-carousel').owlCarousel({

@@ -107,7 +107,7 @@ body{
     opacity: 0.6;
 }
 .narx8{
-    font-size: 13px;
+    font-size: 12px;
     margin: 0;
     padding: 0px;
     margin-bottom: 0rem;
@@ -160,6 +160,7 @@ body{
 }
 #lorem{
     margin-top:3rem; 
+    
 }
 .container-fluid h1{
     font-weight: 800; 
@@ -409,7 +410,7 @@ height: 252px;
 flex-direction: row;
 justify-content: flex-end;
 align-items: center;
-padding: 9px 20px;
+padding: 9px 21px;
 color: #FFFFFF;
 width: 108px;
 height: 43px;
