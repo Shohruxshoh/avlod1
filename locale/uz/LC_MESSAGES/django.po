@@ -207,19 +207,19 @@ msgstr "Yuborish"
 
 #: .\templates\index.html:447
 msgid "Home"
-msgstr "Home"
+msgstr "Bosh sahifa"
 
 #: .\templates\index.html:449
 msgid "About Us"
-msgstr "About Us"
+msgstr "Biz haqimizda"
 
 #: .\templates\index.html:450
 msgid "Partners"
-msgstr "Partners"
+msgstr "Hamkorlar"
 
 #: .\templates\index.html:455
 msgid "Our Blog"
-msgstr "Our Blog"
+msgstr "Bizning blogimiz"
 
 #: .\templates\index.html:457
 msgid " Gallery"
@@ -227,15 +227,15 @@ msgstr "Gallery"
 
 #: .\templates\index.html:458
 msgid " Events"
-msgstr " Events"
+msgstr " Voqealar"
 
 #: .\templates\index.html:459
 msgid " Videos"
-msgstr " Videos"
+msgstr " Videolar"
 
 #: .\templates\index.html:463
 msgid "Follow Us"
-msgstr "Follow Us"
+msgstr "Kuzatish"
 
 #: .\templates\index.html:465
 msgid " Facebook"

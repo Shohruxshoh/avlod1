@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-09 17:21+0500\n"
+"POT-Creation-Date: 2022-02-10 00:43+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,40 +20,40 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\templates\index.html:13 .\templates\index.html:110
-#: .\templates\index.html:395
+#: .\templates\index.html:13 .\templates\index.html:118
+#: .\templates\index.html:388
 msgid "Avlod21"
 msgstr "Avlod21"
 
-#: .\templates\index.html:117
+#: .\templates\index.html:125
 msgid "About"
 msgstr "О нас"
 
-#: .\templates\index.html:120 .\templates\index.html:407
+#: .\templates\index.html:128 .\templates\index.html:400
 msgid "Courses"
 msgstr "Курсы"
 
-#: .\templates\index.html:123
+#: .\templates\index.html:131
 msgid "Blogs"
 msgstr "Блоги"
 
-#: .\templates\index.html:126 .\templates\index.html:320
+#: .\templates\index.html:134 .\templates\index.html:313
 msgid "Galereya"
 msgstr "Галерея"
 
-#: .\templates\index.html:129
+#: .\templates\index.html:137
 msgid "Contact"
 msgstr "Свяжитесь с нами"
 
-#: .\templates\index.html:134
-msgid "Language"
-msgstr "Язык"
+#: .\templates\index.html:142
+msgid "O`zbek"
+msgstr "Pусский"
 
-#: .\templates\index.html:155
+#: .\templates\index.html:163
 msgid "Maqsadimiz"
 msgstr "Наша цель"
 
-#: .\templates\index.html:156
+#: .\templates\index.html:164
 msgid ""
 "O‘zbekistonda inqirozga uchrayotgan korxonalar tizimini qurgan holda "
 "inqirozdan qutulishga sababchi bo‘lish"
@@ -61,19 +61,19 @@ msgstr ""
 "Построение системы кризисных предприятий Узбекистана Способствовать выходу "
 "из кризиса"
 
-#: .\templates\index.html:158
+#: .\templates\index.html:166
 msgid "Read more"
 msgstr "Подробнее"
 
-#: .\templates\index.html:159
+#: .\templates\index.html:167
 msgid "Contact Us"
 msgstr "Связаться с нами"
 
-#: .\templates\index.html:197
+#: .\templates\index.html:214
 msgid "Biz haqimizda"
 msgstr "О нас"
 
-#: .\templates\index.html:198
+#: .\templates\index.html:215
 msgid ""
 "Oʻquv markazimizning maqsadlari va oʻziga xos qadriyatlari mavjud. "
 "Oʻzbekistonda inqirozga uchraryotgan korxonalarni tashkil qilgan holda "
@@ -90,80 +90,80 @@ msgstr ""
 "личном деле, и готовим их для помощи народу Узбекистана. Тогда они помогут и "
 "себе, и своим семьям."
 
-#: .\templates\index.html:199
+#: .\templates\index.html:216
 msgid "Bizning qadriyatlarimiz:"
 msgstr "Наши ценности:"
 
-#: .\templates\index.html:200
+#: .\templates\index.html:216
 msgid "Halollik"
 msgstr "Честность"
 
-#: .\templates\index.html:201
+#: .\templates\index.html:216
 msgid "Adolat"
 msgstr "Справедливость"
 
-#: .\templates\index.html:202
+#: .\templates\index.html:216
 msgid "Mardlik"
 msgstr "Храбрость"
 
-#: .\templates\index.html:203
+#: .\templates\index.html:216
 msgid "Natija"
 msgstr "Результат"
 
-#: .\templates\index.html:224
+#: .\templates\index.html:237
 msgid "Bizning kurslar"
 msgstr "Наши курсы"
 
-#: .\templates\index.html:233
+#: .\templates\index.html:246
 msgid "ta dars"
 msgstr "уроков"
 
-#: .\templates\index.html:237
+#: .\templates\index.html:250 .\templates\index.html:440
 msgid "yana"
 msgstr "ёще"
 
-#: .\templates\index.html:240
+#: .\templates\index.html:253
 msgid "Davomiyligi"
 msgstr "Продолжительность"
 
-#: .\templates\index.html:241
+#: .\templates\index.html:254
 msgid "so`m"
 msgstr "Сум"
 
-#: .\templates\index.html:243
+#: .\templates\index.html:256
 msgid "sotib olish"
 msgstr "Купить"
 
-#: .\templates\index.html:258
+#: .\templates\index.html:271
 msgid "Bizning blog"
 msgstr "Наш блог"
 
-#: .\templates\index.html:302
+#: .\templates\index.html:295
 msgid "Nega aynan Avlod21"
 msgstr "Почему именно Avlod21"
 
-#: .\templates\index.html:303
+#: .\templates\index.html:296
 msgid ""
 "O'z korxonangizda tizimli ishni yo'lga qo'yishni aynan biz bilan o'rganing."
 msgstr ""
 "Узнайте, как создать системную работу в вашем собственном бизнесе именно с "
 "нами."
 
-#: .\templates\index.html:307
+#: .\templates\index.html:300
 msgid "Tengsiz mutaxassis"
 msgstr "Несравненный специалист."
 
-#: .\templates\index.html:307
+#: .\templates\index.html:300
 msgid "Marketing Boshqaruv Sotuv va Moliya bo'yicha mutaxassis bo'lasiz."
 msgstr ""
 "Если вы эксперт в своей области, вы не будете искать работу, работодатели "
 "будут искать вас, будьте самым компетентным экспертом в своей сфере."
 
-#: .\templates\index.html:308
+#: .\templates\index.html:301
 msgid "Kuchli va ahil jamoa"
 msgstr "Сильная и сплоченная команда."
 
-#: .\templates\index.html:308
+#: .\templates\index.html:301
 msgid ""
 "Siz taktik va strategik fikrlay oladigan, mustaqil va sifatli ishlay "
 "oladigan, ahil va jonkuyar jamoada bo'lasiz."
@@ -171,11 +171,11 @@ msgstr ""
 "Работу которую вы бы выполнили за 7 месяцев в одиночку, с командой вы можете "
 "выполнить за неделю."
 
-#: .\templates\index.html:309
+#: .\templates\index.html:302
 msgid "Moliyaviy erkinlik"
 msgstr "Финансовая независимость"
 
-#: .\templates\index.html:309
+#: .\templates\index.html:302
 msgid ""
 "Kuchli mutaxassislar katta loyihalarni yuritadi, katta loyihalar yaxshi "
 "daromad olib keladi, yaxshi daromadga siz ham ega bo'ling."
@@ -183,39 +183,42 @@ msgstr ""
 "Настоящие профессионалы управляют большими проектами, большие проекты "
 "приносят хорошую прибыль, забирайте и вы свой большой прибыль."
 
-#: .\templates\index.html:335
+#: .\templates\index.html:328
 msgid "Biz bilan bog‘lanish"
 msgstr "Связаться с нами"
 
-#: .\templates\index.html:339
+#: .\templates\index.html:332
 msgid "Bosh Idora"
 msgstr "Главный офис"
 
-#: .\templates\index.html:341
+#: .\templates\index.html:334
 msgid "Toshkent, Beruniy m, Mashhura o‘quv markazi, 3-qavat"
 msgstr "Ташкент, Метро Беруни, учебный центр Машхура, 3-й этаж"
 
-#: .\templates\index.html:354
-msgid "Ism"
-msgstr "Имя"
+#: .\templates\index.html:347
+#, fuzzy
+msgid " Ism"
+msgstr " Имя"
 
-#: .\templates\index.html:360
-msgid "Telefon"
-msgstr "Телефон"
+#: .\templates\index.html:353
+#, fuzzy
+msgid " Telefon"
+msgstr " Телефон"
 
-#: .\templates\index.html:366
-msgid "Email"
-msgstr "Электронная почта"
+#: .\templates\index.html:359
+#, fuzzy
+msgid "  Email"
+msgstr "  Электронная почта"
 
-#: .\templates\index.html:372
-msgid "Xabar"
-msgstr "Сообщение"
+#: .\templates\index.html:365
+msgid "  Message"
+msgstr "  Cообщение"
 
-#: .\templates\index.html:377
+#: .\templates\index.html:370
 msgid "Yuborish"
 msgstr "Отправить"
 
-#: .\templates\index.html:396
+#: .\templates\index.html:389
 #, python-format
 msgid ""
 "Hech narsa o‘z-o‘zidan, harakat va irodasiz, qurbon va mehnatsiz yuzaga "
@@ -224,49 +227,53 @@ msgstr ""
 "Ничего не происходит само собой, без усилий и воли, без жертв и упорного "
 "труда.  97% успеха — это УПОРСТВО"
 
-#: .\templates\index.html:403
+#: .\templates\index.html:396
 msgid "Home"
-msgstr "Дом "
+msgstr "Главная страница "
 
-#: .\templates\index.html:405
+#: .\templates\index.html:398
 msgid "About Us"
 msgstr "О нас"
 
-#: .\templates\index.html:406
+#: .\templates\index.html:399
 msgid "Partners"
 msgstr "Партнёры"
 
-#: .\templates\index.html:411
+#: .\templates\index.html:404
 msgid "Our Blog"
 msgstr "Наш блог"
 
-#: .\templates\index.html:413
+#: .\templates\index.html:406
 msgid " Gallery"
 msgstr "Галерея "
 
-#: .\templates\index.html:414
+#: .\templates\index.html:407
 msgid " Events"
 msgstr "Мероприятия"
 
-#: .\templates\index.html:415
+#: .\templates\index.html:408
 msgid " Videos"
 msgstr "Видео"
 
-#: .\templates\index.html:419
+#: .\templates\index.html:412
 msgid "Follow Us"
-msgstr ""
+msgstr "Следовать"
 
-#: .\templates\index.html:421
+#: .\templates\index.html:414
 msgid " Facebook"
 msgstr "Facebook"
 
-#: .\templates\index.html:422
+#: .\templates\index.html:415
 msgid " Telegram"
 msgstr "Telegram"
 
-#: .\templates\index.html:423
+#: .\templates\index.html:416
 msgid "  Instagram"
 msgstr "Instagram"
+
+#: .\templates\index.html:440
+msgid "kamroq"
+msgstr "меньше"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
@@ -312,3 +319,16 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~ msgid "&nbsp Xabar"
+#~ msgstr "Сообщение"
+
+#~ msgid "salom"
+#~ msgstr "privet"
+
+#~ msgid "Language"
+#~ msgstr "Язык"
+
+#~ msgid "Ism"
+#~ msgstr "Имя"

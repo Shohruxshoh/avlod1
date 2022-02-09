@@ -137,13 +137,13 @@
                     <a class="nav-link" href="#contact">{% trans "Contact" %}</a>
                   </li>
                 </ul>
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" style='border:none;  box-shadow: none; background: #0C111F; ; color: #fff; font-size: 15px;' type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    {% trans "Til"%}
+                <div class="dropdown" >
+                  <button class="btn btn-secondary dropdown-toggle bot" style='border:none;  box-shadow: none; background: #0C111F; margin-right: 2rem; color: #fff; font-size: 15px;' type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    {% trans "O`zbek"%}
                   </button>
                   <ul class="dropdown-menu" style='background: #0C111F;' aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" style='background: #0C111F; color: #fff; font-size: 15px;' href="/uz/">o`zbek</a></li>
-                    <li ><a class="dropdown-item" style='background: #0C111F; color: #fff; font-size: 15px;' href="/ru/">русский</a></li>
+                    <li><a class="dropdown-item" style='background: #0C111F; color: #fff; font-size: 15px;' href="/uz/">O`zbek</a></li>
+                    <li ><a class="dropdown-item" style='background: #0C111F; color: #fff; font-size: 15px;' href="/ru/">Pусский</a></li>
                   </ul>
                 </div>
                 {% comment %} <select class="form-select form-select-sm til" style='border:none; box-shadow: none;' aria-label=".form-select-sm example">
@@ -212,11 +212,7 @@
                <div class="p-3">
                 <h1>{% trans "Biz haqimizda" %}</h1>   
                 <p> {% trans "Oʻquv markazimizning maqsadlari va oʻziga xos qadriyatlari mavjud. Oʻzbekistonda inqirozga uchraryotgan korxonalarni tashkil qilgan holda inqirozdan qutulishga sababchi boʻlish. Yoshlarga kelajakda oʻz ishini mutaxasisi boʻlishni istagan, bizneslarda yoki shaxsiy biznesda rahbar lavozimida boʻlishni istagan yoshlarga,marketing, moliya, sotuv va boshqaruv bilimlarini berib boramiz va Oʻzbekiston ahliga yordam berish uchun tayyorlaymiz. Shunda ular oʻzlariga ham va oilalariga ham yordam berishadi." %}
-                <br>{% trans "Bizning qadriyatlarimiz:" %}<br>
-                1. {% trans "Halollik" %}<br>
-                2. {% trans "Adolat" %}<br>
-                3. {% trans "Mardlik" %}<br>
-                4. {% trans "Natija" %}
+                <br>{% trans "Bizning qadriyatlarimiz:" %}<b> {% trans "Halollik" %}</b> <b>{% trans "Adolat" %}</b> <b>{% trans "Mardlik" %}</b> <b>{% trans "Natija" %}</b>
                 </p>
               </div>
               </div>
@@ -347,25 +343,25 @@
 										<div id='frm' class="row" style=''>
 											<div class="form-group col-md-6">
 												<div class="contact_form " >
-													<input type="text" name="name" class='form1' placeholder="{% trans "&nbsp Ism" %}" required="required">
+													<input type="text" name="name" class='form1' placeholder="{% trans ' Ism' %}" required="required">
 												</div>
 											</div>
 											
 											<div class="form-group col-md-6">
 												<div class="contact_form">
-													<input type="text" name="phone" id='phone'  class="form1" placeholder="{% trans "&nbsp Telefon" %}" required="required" style='margin-left:30px;'>
+													<input type="text" name="phone" id='phone'  class="form1" placeholder="{% trans ' Telefon' %}" required="required"  style='margin-left:30px;'>
 												</div>
 											</div>
 											
 											<div class="form-group col-md-12">
 												<div class="contact_form">
-													<input type="email" name="email" class="form2" placeholder="{% trans "&nbsp Email" %}" style=' ' >
+													<input type="email" name="email" class="form2" placeholder="{% trans '  Email' %}" style=''  >
 												</div>
 											</div>
 										
 											<div class="form-group col-md-12">
 												<div class="contact_form">
-													<textarea rows="6" name="message" class="form3" placeholder="{% trans "&nbsp Xabar" %}" required="required" ></textarea>
+													<textarea rows="6" name="message" class="form3" placeholder="{% trans '  Message' %}" required="required" ></textarea>
 												</div>
 											</div>
 										</div>
@@ -440,7 +436,7 @@
       });
       $('.link').on('click', function(){
         $('.owl-stage-outer').toggleClass("item1");
-        var replaceText = $(this).parent().hasClass("showContent") ? "kamroq" : "yana";
+        var replaceText = $(this).parent().hasClass("showContent") ? "{% trans 'kamroq' %}" : "{% trans 'yana' %}";
         $(this).text(replaceText);
       });
       $(function(){

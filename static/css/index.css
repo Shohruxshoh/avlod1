@@ -1060,6 +1060,9 @@ border-radius: 30px;
     .navbar-dark .navbar-toggler{
         font-size: 13px;
     }
+    .bot{
+        margin-left: 15.5rem;
+    }
     .til{
         margin-left: 167px;
         box-shadow: none;
@@ -2378,6 +2381,9 @@ border-radius: 30px;
     .navbar-dark .navbar-toggler{
         font-size: 10px;
     }
+    .bot{
+        margin-left: 10rem;
+    }
     .til{
         margin-left: 152px;
         box-shadow: none;
@@ -2643,7 +2649,13 @@ border-radius: 30px;
     .main_btn{
         margin-bottom: 2rem;
         margin-left: 13px;
-        padding: 0px 16px 0px 0px;
+        padding: 0px 13px 0px 0px;
+    }
+    #oy {
+        margin-top: -40px;
+    }
+    .owl-stage-outer{
+        height: 438.578px !important;
     }
     .container-fluid h1{
         font-weight: 800; 
@@ -2877,7 +2889,7 @@ border-radius: 30px;
     }
     .p-3 p{
         font-size: 12px;
-        width: 22rem;
+        width: 21rem;
     }
     .apple img{
         margin-left: -2rem;
@@ -2892,7 +2904,7 @@ border-radius: 30px;
     .hakorlar{
         margin-left:0px;
         margin-top: -13rem;
-        width: 24rem;
+        width: 23rem;
     }
     #courses{
         padding-top:0rem;
@@ -2971,6 +2983,7 @@ border-radius: 30px;
     }
     .nage2{
         font-size: 13px;
+        width: 23rem;
     }
     .rasm1 {
         width: 302px;
@@ -2983,6 +2996,14 @@ border-radius: 30px;
     #lorem{
         margin-top:0rem; 
     }
+    .bot{
+        border: none;
+        box-shadow: none;
+        background: #0C111F;
+        color: #fff;
+        font-size: 15px;
+        margin-left: 10rem;
+    }
     .col-9 h1 {
         font-size: 15px;
         font-weight: bold;
@@ -2991,6 +3012,7 @@ border-radius: 30px;
         font-size: 11px;
         margin-top: 0;
         margin-bottom: 0rem;
+        width: 19rem;
     }
     .icone span i {
         font-size: 20px;
@@ -3242,7 +3264,7 @@ border-radius: 30px;
         box-shadow: none;
     }
     .maqsad {
-        margin-left: 7rem;
+        margin-left: 8rem;
         font-weight: bold;
         color: #FFFFFF;
         font-size: 30px;
@@ -3253,7 +3275,7 @@ border-radius: 30px;
         opacity: 0.7;
         margin-top: 12px;
         width: 16rem;
-        margin-left: 4rem;
+        margin-left: 5rem;
         text-align: center;
     }
     .button .btngold{
@@ -3399,6 +3421,7 @@ border-radius: 30px;
     }
     .nage2{
         font-size: 13px;
+        width: 23rem;
     }
     .rasm1 {
         width: 302px;
@@ -3419,6 +3442,8 @@ border-radius: 30px;
         font-size: 11px;
         margin-top: 0;
         margin-bottom: 0rem;
+        width: 18rem;
+
     }
     .icone span i {
         font-size: 20px;
@@ -3566,7 +3591,10 @@ border-radius: 30px;
     .button {
         width: 100%;
         margin: 1rem 1rem;
-        margin-left: 7rem;
+        margin-left: 6rem;
+    }
+    .bot{
+        margin-left: 9rem;
     }
     .button a{
         padding: 1rem 1.5rem;
