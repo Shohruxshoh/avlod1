@@ -1,12 +1,12 @@
 from django.shortcuts import redirect, render
 from .forms import ContactForm
-from .models import Courses, Post, Team
+from .models import Courses, Post, Team, Galereya
 from django.utils.translation import gettext as _
 from django.utils.translation import activate, get_language, gettext
 # Create your views here.
 
 def TeamsView(request):
-    teams = Team.objects.all().order_by('-created')[:4]
+    teams = Galereya.objects.all().order_by('-created')[:1]
     courses = Courses.objects.all().order_by('-created')[:3]
     posts = Post.objects.all().order_by('-created')[:3]
     

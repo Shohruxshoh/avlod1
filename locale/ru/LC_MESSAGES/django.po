@@ -196,19 +196,16 @@ msgid "Toshkent, Beruniy m, Mashhura o‘quv markazi, 3-qavat"
 msgstr "Ташкент, Метро Беруни, учебный центр Машхура, 3-й этаж"
 
 #: .\templates\index.html:347
-#, fuzzy
 msgid " Ism"
 msgstr " Имя"
 
 #: .\templates\index.html:353
-#, fuzzy
 msgid " Telefon"
 msgstr " Телефон"
 
 #: .\templates\index.html:359
-#, fuzzy
-msgid "  Email"
-msgstr "  Электронная почта"
+msgid " Email"
+msgstr " Электронная почта"
 
 #: .\templates\index.html:365
 msgid "  Message"
@@ -216,7 +213,7 @@ msgstr "  Cообщение"
 
 #: .\templates\index.html:370
 msgid "Yuborish"
-msgstr "Отправить"
+msgstr " Отправить"
 
 #: .\templates\index.html:389
 #, python-format
